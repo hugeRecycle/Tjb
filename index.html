@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport" />
+		<title>Home</title>
+		<link rel="shortcut icon" href="./favicon.ico">
+		<link rel="stylesheet" type="text/css" href="./css/common.css" />
+		<link rel="stylesheet" type="text/css" href="./css/home.css" />
+		<link rel="stylesheet" type="text/css" href="./css/swiper-bundle.min.css">
+		<script src="./js/jquery-2.1.4.min.js"></script>
+		<script src="./js/swiper-bundle.min.js"></script>
+		<script src="./js/d3.min.js"></script>
+		<script src="./js/d3.layout.cloud.js"></script>
+	</head>
+	<body>
+		<header class="header-box">
+			<div class="logo-box">
+                <a>
+                    <img src="./img/icon_headerLogo_l.png" title="西湖大学" />
+                </a>
+				<a href="https://www.westlake.edu.cn/" target="_blank">
+                    <img src="./img/icon_headerLogo_r.png" title="西湖大学" />
+                </a>
+            </div>
+			<nav class="menu-box">
+				<ul>
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="research.html">Research<img src="./img/icon_arrowDown.png" /></a>
+						<ul class="childList">
+							<li><a href="researchTheme.html">Research Theme 1</a></li>
+							<li><a>Research Theme 2</a></li>
+						</ul>
+					</li>
+					<li><a href="gallery.html">Gallery<img src="./img/icon_arrowDown.png" /></a>
+						<ul class="childList">
+							<li><a href="galleryCategory.html">Gallery category 1</a></li>
+							<li><a>Gallery category 2</a></li>
+						</ul>
+					</li>
+					<li><a href="publications.html">Publications</a></li>
+					<li><a href="team.html">Team</a></li>
+					<li><a href="openings.html">Openings</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="swiper pageSwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide itemBlock banner-box">
+					<img src="./images/home/banner.png">
+					<div class="content-box">
+						<img src="./images/home/banner-content.png">
+					</div>
+				</div>
+				<div class="swiper-slide itemBlock itemBlock2 bg-F5F5F5">
+					<div style="position: relative;">
+						<div class="container-box">
+							<h5>ABOUT US</h5>
+							<div class="article-txt">
+								<div>
+									<img src="./images/home/img2.png" />
+									<div>
+										<span>Dr. Jianbo Tang</span>
+										<span>Principle Investigator</span>
+									</div>
+								</div>
+								<p>Welcome to the New Phase Metallics and Manufacturing Laboratory (NPMM Lab), part of Department of Materials Science and Engineering, School of Engineering at Westlake University.</p>
+								<p>We are an interdisciplinary group working at the forefronts of liquid metals—a family of low-melting-point metals and alloys that, despite their long existence, have not been paid much attention until recently. We seek to understand these “forgotten” metallic liquids and innovate materials design and manufacturing via liquid metals’ ways. Our mission is to showcase liquid metals’ special role in pursuing the sustainable development of key technologies and industrial sectors, and in improving the well-being of individuals.</p>
+							</div>
+							<div class="btn-box">
+								<a href="openings.html">LEARN MORE</a>
+							</div>
+						</div>
+						<div class="decorative-imageBox">
+							<img class="decorativeImg_1" src="./images/home/decorativeImg_1.png" />
+							<img class="decorativeImg_2" src="./images/home/decorativeImg_2.png" />
+							<img class="decorativeImg_3" src="./images/home/decorativeImg_3.png" />
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide itemBlock itemBlock3">
+					<div class="container-box">
+						<h5>NEWS & EVENTS</h5>
+						<div class="article-txt">
+							<div class="swiper newsSwiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img src="./images/home/img3.png" />
+										<div>
+											<p>Oct 27, 2024 | Engineering Special Seminar</p>
+											<p>Prof Nicola Gaston (The University of Auckland & MacDiarmid institute, NZ)</p>
+											<p>Liguid metals as dynamics systems for atomically precise control... <a href="newsDetail.html">Read more</a></p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<img src="./images/home/img3.png" />
+										<div>
+											<p>Oct 27, 2024 | Engineering Special Seminar</p>
+											<p>Prof Nicola Gaston (The University of Auckland & MacDiarmid institute, NZ)</p>
+											<p>Liguid metals as dynamics systems for atomically precise control... <a href="newsDetail.html">Read more</a></p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<ul id="newsList">
+								<li data-slide="0" class="active">
+									<p>Engineering Special Seminar (Date: October 18, 2024)</p>
+									<p>Prof. Nicola Gaston | Liquid Metals as Dynamic Systems for Atomically-Precise Control</p>
+								</li>
+								<li data-slide="1">
+									<p>Engineering Special Seminar (Date: October 18, 2024)</p>
+									<p>Prof. Nicola Gaston | Liquid Metals as Dynamic Systems for Atomically-Precise Control</p>
+								</li>
+								<li>
+									<p>Engineering Special Seminar (Date: October 18, 2024)</p>
+									<p>Prof. Nicola Gaston | Liquid Metals as Dynamic Systems for Atomically-Precise Control</p>
+								</li>
+							</ul>
+							<div class="clean"></div>
+							<div class="btn-box">
+								<a href="news.html">MORE NEWS & EVENTS</a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="swiper-slide itemBlock itemBlock4 bg-F5F5F5">
+					<div class="boxH #F5F5F5">
+						<div class="container-box">
+							<h6>NPMM</h6>
+							<h5>KEYWORD CLOUD</h5>
+							<div class="article-txt">
+								<div class="wordCloud-box" id="d3_cloud"></div>
+								<div class="wordCloudDetail-box" id="wordCloudList">
+									<div data-type="LICUTD">
+										<p>Eutectic System</p>
+										<p>A type of a homogeneous mixture that has a melting point lower than those of the constituents A type of a homogeneous mixture that has a melting point lower than those of the constituents</p>
+									</div>
+									<div data-type="RESEARCM">
+										<p>Eutectic System Test</p>
+										<p>A type of a homogeneous mixture that has a melting point lower than those of the constituents A type of a homogeneous mixture that has a melting point lower than those of the constituents</p>
+									</div>
+								</div>
+								<div class="clean"></div>
+								<div class="decorative-imageBox">
+									<img class="decorativeImg_4" src="./images/home/decorativeImg_4.png" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<footer class="footer-box">
+						<div class="logo-box">
+							<img src="./img/icon_footerLogo_l.png">
+							<img src="./img/icon_footerLogo_r.png">
+						</div>
+						<div class="labInfo-box">
+							<a href="joinus.html">Join us</a>
+							<p><span>Email :</span> jianbotang@westlake.edu.cn</p>
+							<p><span>Lab :</span> E3-101A&B, Yungu Campus, Westlake University</p>
+							<p><span>Address :</span> No. 600 Dunyu Road, XihuDistrict, Hangzhou, Zhejiang, 310030, PR. China</p>
+						</div>
+						<div class="filings-box">
+							<p><a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备18025489号</a></p>
+							<p>浙公安备33010602007514号</p>
+							<p>Copyright © Westlake University. All Rights Reserved</p>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</main>
+		<script>
+			$(function(){
+				setTimeout(function() {
+					sessionStorage.clear();
+				}, 0);
+				function setRem(designSize) {
+					let html = document.documentElement;
+					let width = html.clientWidth;
+					width = width >= 1440 ? 1440 : width;
+			     	html.style.fontSize = width / designSize + 'px'; // 设计稿宽度为1440px，那么1rem=100px，故除以14.4
+				}
+				setRem(14.4);
+				window.onresize = function() {
+					setRem(14.4);
+				};
+				var index=0;
+				if(sessionStorage.getItem("index")){
+					index=sessionStorage.getItem("index");
+				}
+				var pageSwiper = new Swiper(".pageSwiper", {
+					direction: "vertical",
+					mousewheel: true,
+					initialSlide: index,
+					centeredSlides: true
+				});
+				$("a").bind("click",function(){
+					var i= $(".pageSwiper .swiper-slide-active").index();
+					sessionStorage.setItem("index",i);
+				})
+
+				var newsSwiper = new Swiper(".newsSwiper", {
+					autoplay: {
+						delay: 2500,
+						disableOnInteraction: false
+					},
+					direction: "horizontal",
+					navigation: {
+						nextEl: ".swiper-button-next",
+						prevEl: ".swiper-button-prev"
+					},
+					pagination: {
+						el: ".swiper-pagination",
+						clickable: true
+					}
+				});
+				newsSwiper.on('slideChange', function () {
+					var activeIndex = newsSwiper.activeIndex;
+					setNewsItemActive(activeIndex);
+				});
+				var newsItems = document.querySelectorAll('#newsList>li');
+				newsItems.forEach(function(item) {
+					item.addEventListener('click', function() {
+						var index = this.getAttribute('data-slide');
+						newsSwiper.slideTo(index);
+					});
+				});
+				function setNewsItemActive (index) {
+					newsItems.forEach(function(item) {
+						item.classList.remove('active')
+						if (index == item.getAttribute('data-slide')) {
+							item.classList.add('active')
+						}
+					});
+				}
+				var words_list = [
+					{text:"LIQUTD"},
+					{text:"RESEARCM"},
+					{text:"TANG"},
+					{text:"METALS"},
+					{text:"SCIENCE"},
+					{text:"FESE"},
+					{text:"WERSITT"},
+					{text:"2024"},
+					{text:"UNIVERSITY"}
+				];
+				var layout = d3.layout.cloud()
+					.size([560, 380])
+					.words(words_list)
+					.padding(5)
+					.rotate(function() { return ~~(Math.random() * 2) * 0; })
+					.font("Impact")
+					.fontSize(function(d, i) { 
+						let size = 30;
+						switch (i) {
+							case 0:
+								size = 100;
+								break;
+							case 1:
+								size = 70;
+								break;
+							case 2:
+							case 3:	
+								size = 50;
+								break;	
+							default:
+								size = 30;
+						}
+						return size;
+					})
+					.on("end", draw);
+				function draw(words) {
+					d3.select("#d3_cloud").append("svg")
+						.attr("width", layout.size()[0])
+						.attr("height", layout.size()[1])
+						.append("g")
+						.attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+						.selectAll("text")
+						.data(words)
+						.enter().append("text")
+						// .style("font-size", function(d) { return d.size + "px"; })
+						.style("font-size", function(d, i) { 
+							let size = 30;
+							switch (i) {
+								case 0:
+									size = 100;
+									break;
+								case 1:
+									size = 70;
+									break;
+								case 2:
+								case 3:	
+									size = 50;
+									break;	
+								default:
+									size = 30;
+							}
+							return size + "px";
+						})
+
+						.style("font-family", "Impact")
+						// .style("fill", function(d, i) { return words_list[i].color || '#999' ; })
+						.style("fill", function(d, i) {
+							let color = '';
+							switch (i) {
+								case 0:
+									color = "#2A5F9A";
+									break;
+								case 1:
+									color = "#7A7A7A";
+									break;
+								case 2:
+								case 3:	
+									color = "#766569";
+									break;	
+								default:
+									color = "#A8AFB2";
+							}
+							return color;
+						})
+						.attr("text-anchor", "middle")
+						.attr("transform", function(d) {
+							return "translate(" + [d.x-2, d.y] + ")rotate(" + d.rotate + ")";
+						})
+						.attr("cursor", "pointer")
+						.text(function(d) { return d.text; })
+						.on("click", function(event, d) {
+							$('#wordCloudList>div').each(function() {
+								let newsType = $(this).data('type');
+								$(this).addClass('hide');
+								if (`${event.text}` == newsType) {
+									$(this).removeClass('hide');
+								}
+							});
+						});
+				}
+				layout.start();
+				$('#wordCloudList>div').each(function(i) {
+					$(this).addClass('hide');
+					if (i == 0) {
+						$(this).removeClass('hide');
+					}
+				})
+			})	
+		</script>
+	</body>
+</html>

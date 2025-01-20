@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport" />
+		<title>Gallery</title>
+		<link rel="shortcut icon" href="./favicon.ico">
+		<link rel="stylesheet" type="text/css" href="./css/common.css" />
+		<link rel="stylesheet" type="text/css" href="./css/gallery.css" />
+        <link rel="stylesheet" type="text/css" href="./css/swiper-bundle.min.css">
+		<script src="./js/jquery-2.1.4.min.js"></script>
+        <script src="./js/swiper-bundle.min.js"></script>
+	</head>
+	<body>
+		<header class="header-box">
+			<div class="logo-box">
+                <a>
+                    <img src="./img/icon_headerLogo_l.png" title="西湖大学" />
+                </a>
+				<a href="https://www.westlake.edu.cn/" target="_blank">
+                    <img src="./img/icon_headerLogo_r.png" title="西湖大学" />
+                </a>
+            </div>
+			<nav class="menu-box">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="research.html">Research<img src="./img/icon_arrowDown.png" /></a>
+						<ul class="childList">
+							<li><a href="researchTheme.html">Research Theme 1</a></li>
+							<li><a>Research Theme 2</a></li>
+						</ul>
+					</li>
+					<li><a href="gallery.html">Gallery<img src="./img/icon_arrowDown.png" /></a>
+						<ul class="childList">
+							<li><a href="galleryCategory.html">Gallery category 1</a></li>
+							<li><a>Gallery category 2</a></li>
+						</ul>
+					</li>
+					<li><a href="publications.html">Publications</a></li>
+					<li><a href="team.html">Team</a></li>
+					<li><a href="openings.html">Openings</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="banner-box">
+			<img src="./images/research/banner.png" />
+			<div class="banner-content">
+				<div class="txt-box">
+					<h6>Welcome to Gallery !</h6>
+				</div>
+			</div>
+		</section>
+		<main>
+			<div class="itemBlock">
+				<div class="container-box">
+					<h5>Gallery category 1</h5>
+                    <p>We are an experimental group working at the forefronts of the materials science and engineering of liquid metals. Our research is highly interdisciplinary in terms of both the material systems involved and the methodologies applied. The following themes outline our current research interest.The following themes outline our current research interest.s involved and the methodologies applied. The following themes outline our current research interest.The following themes outline our current research interest.</p>
+                    <div>
+                        <div class="swiper gallerySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./images/gallery/img_1.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/gallery/img_1.png" />
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="img-list" id="img-list">
+                            <img data-slide="0" src="./images/gallery/img_2.png" />
+                            <img data-slide="1" src="./images/gallery/img_2.png" />
+                            <img src="./images/gallery/img_2.png" />
+                            <a href="./galleryCategory.html">LEARN MORE</a>
+                        </div>
+                        <div class="clean"></div>
+                    </div>
+                </div>
+			</div>
+		</main>
+		<footer class="footer-box">
+			<div class="logo-box">
+				<img src="./img/icon_footerLogo_l.png">
+				<img src="./img/icon_footerLogo_r.png">
+			</div>
+			<div class="labInfo-box">
+				<a href="joinus.html">Join us</a>
+				<p><span>Email :</span> jianbotang@westlake.edu.cn</p>
+				<p><span>Lab :</span> E3-101A&B, Yungu Campus, Westlake University</p>
+				<p><span>Address :</span> No. 600 Dunyu Road, XihuDistrict, Hangzhou, Zhejiang, 310030, PR. China</p>
+			</div>
+			<div class="filings-box">
+				<p><a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备18025489号</a></p>
+				<p>浙公安备33010602007514号</p>
+				<p>Copyright © Westlake University. All Rights Reserved</p>
+			</div>
+		</footer>
+		<script>
+			$(function(){
+				function setRem(designSize) {
+					let html = document.documentElement;
+					let width = html.clientWidth;
+					width = width >= 1440 ? 1440 : width;
+			     	html.style.fontSize = width / designSize + 'px'; // 设计稿宽度为1440px，那么1rem=100px，故除以14.4
+				}
+				setRem(14.4);
+				window.onresize = function() {
+					setRem(14.4);
+				};
+                var gallerySwiper = new Swiper(".gallerySwiper", {
+                    autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false
+                    },
+                    direction: "horizontal",
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev"
+                    }
+                });
+                var imgItems = document.querySelectorAll('#img-list>img');
+                imgItems.forEach(function(item) {
+                    item.addEventListener('click', function() {
+                        var index = this.getAttribute('data-slide');
+                        gallerySwiper.slideTo(index);
+                    });
+                });
+			})
+		</script>
+	</body>
+</html>

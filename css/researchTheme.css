@@ -1,0 +1,75 @@
+.itemBlock {
+    background-color: #F5F5F5;
+}
+.itemBlock:nth-child(2n) {
+    background-color: #FFFFFF;
+}
+.itemBlock .container-box {
+	max-width: 14.4rem;
+	margin: 0 auto;
+	padding: .72rem 1.2rem;
+}
+.itemBlock:first-child .container-box {
+    padding-top: .98rem;
+    position: relative;
+}
+.back-box {
+    position: absolute;
+    top: .36rem;
+    left: 1.2rem;
+    display: flex;
+    align-items: center;
+    height: .22rem;
+    font-size: .16rem;
+    color: rgba(0,0,0,0.85);
+    font-family: Avenir-Medium;
+    font-weight: 500;
+    margin-bottom: .37rem;
+}
+.back-box img {
+    width: .18rem !important;
+    height: .18rem !important;
+    margin-right: .04rem;
+}
+.back-box a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.65);
+}
+.back-box span:nth-child(3) {
+    margin: 0 .08rem;
+    color: rgba(0,0,0,0.65);
+}
+.itemBlock img {
+    width: 5.2rem;
+    height: 3.68rem;
+    display: block;
+    float: left;
+}
+.itemBlock:nth-child(2n) img {
+    float: right;
+}
+.itemBlock:nth-child(2n) .article-txt {
+    float: left;
+}
+.itemBlock .article-txt {
+    width: 6.24rem;
+    float: right;
+}
+.itemBlock .article-txt img {
+    width: .6rem;
+    height: .6rem;
+    float: none;
+}
+.itemBlock .article-txt p {
+    font-size: .2rem;
+    color: rgba(0,0,0,0.65);
+    font-family: Avenir-Roman;
+    margin-top: .12rem;
+    line-height: .29rem;
+}
+.itemBlock .article-txt p:nth-child(2) {
+    color: rgba(0,0,0,0.85);
+    margin-top: .2rem;
+    line-height: .3rem;
+    font-size: .22rem;
+}

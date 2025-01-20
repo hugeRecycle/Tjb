@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport" />
+		<title>Research</title>
+		<link rel="shortcut icon" href="./favicon.ico">
+		<link rel="stylesheet" type="text/css" href="./css/common.css" />
+		<link rel="stylesheet" type="text/css" href="./css/research.css" />
+		<script src="./js/jquery-2.1.4.min.js"></script>
+	</head>
+	<body>
+		<header class="header-box">
+			<div class="logo-box">
+                <a>
+                    <img src="./img/icon_headerLogo_l.png" title="西湖大学" />
+                </a>
+				<a href="https://www.westlake.edu.cn/" target="_blank">
+                    <img src="./img/icon_headerLogo_r.png" title="西湖大学" />
+                </a>
+            </div>
+			<nav class="menu-box">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="research.html">Research<img src="./img/icon_arrowDown.png" /></a>
+						<ul class="childList">
+							<li><a href="researchTheme.html">Research Theme 1</a></li>
+							<li><a>Research Theme 2</a></li>
+						</ul>
+					</li>
+					<li><a href="gallery.html">Gallery<img src="./img/icon_arrowDown.png" /></a>
+						<ul class="childList">
+							<li><a href="galleryCategory.html">Gallery category 1</a></li>
+							<li><a>Gallery category 2</a></li>
+						</ul>
+					</li>
+					<li><a href="publications.html">Publications</a></li>
+					<li><a href="team.html">Team</a></li>
+					<li><a href="openings.html">Openings</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="banner-box">
+			<img src="./images/research/banner.png" />
+			<div class="banner-content">
+				<div class="txt-box">
+					<h6>Welcome to Rescarch Overview!</h6>
+					<p>The inquiry central to our research is: What does a disordered yet dynamic state of metallic matter imply from the perspective of a material scientist and engineer?</p>
+					<p>In finding the answers, we delve into a number of fundamental topics unique to liquid metals. These include atomic-scale events, microscopic structural evolutions, non-conventional phase transitions, surface/interface processes and effects, multi-component interactions, as well as multi-material systems involving liquid metals. By fusing interdisciplinary concepts and methodologies, we set out to discover innovative ways of producing high-value metals, alloys, metal derivatives (e.g., metal oxides), heterostructures, and composite materials with well-defined compositions, structures, properties and functions. A step beyond material design, our interest extends to integrating these material building blocks into devices and systems for applications in catalysis, (bio)sensing, electronics, optoelectronics, and thermal engineering settings.</p>
+				</div>
+			</div>
+		</section>
+		<main>
+			<div class="itemBlock">
+				<div class="container-box">
+					<div class="item" onclick="openPage('./researchTheme.html')">
+						<img src="./images/research/img_1.png">
+						<div class="mask">
+							<div>Research Theme 1</div>
+						</div>
+					</div>
+					<div class="item">
+						<img src="./images/research/img_1.png">
+						<div class="mask">
+							<div>Research Theme 2</div>
+						</div>
+					</div>
+					<div class="item">
+						<img src="./images/research/img_1.png">
+						<div class="mask">
+							<div>Research Theme 3</div>
+						</div>
+					</div>
+					<div class="item">
+						<img src="./images/research/img_1.png">
+						<div class="mask">
+							<div>Research Theme 4</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer-box">
+			<div class="logo-box">
+				<img src="./img/icon_footerLogo_l.png">
+				<img src="./img/icon_footerLogo_r.png">
+			</div>
+			<div class="labInfo-box">
+				<a href="joinus.html">Join us</a>
+				<p><span>Email :</span> jianbotang@westlake.edu.cn</p>
+				<p><span>Lab :</span> E3-101A&B, Yungu Campus, Westlake University</p>
+				<p><span>Address :</span> No. 600 Dunyu Road, XihuDistrict, Hangzhou, Zhejiang, 310030, PR. China</p>
+			</div>
+			<div class="filings-box">
+				<p><a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备18025489号</a></p>
+				<p>浙公安备33010602007514号</p>
+				<p>Copyright © Westlake University. All Rights Reserved</p>
+			</div>
+		</footer>
+		<script>
+			$(function(){
+				function setRem(designSize) {
+					let html = document.documentElement;
+					let width = html.clientWidth;
+					width = width >= 1440 ? 1440 : width;
+			     	html.style.fontSize = width / designSize + 'px'; // 设计稿宽度为1440px，那么1rem=100px，故除以14.4
+				}
+				setRem(14.4);
+				window.onresize = function() {
+					setRem(14.4);
+				};
+			})
+			function openPage(url, target) {
+				if (url) {
+					window.open(url, target || '_self')
+				}
+			}
+		</script>
+	</body>
+</html>
