@@ -73,7 +73,7 @@ img {
 	margin-right: 0;
 }
 .header-box .logo-box img {
-	width: 1.6rem;
+	/* width: 1.6rem; */
 	height: .58rem;
 	display: block;
 	object-fit: cover;
