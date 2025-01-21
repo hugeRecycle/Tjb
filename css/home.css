@@ -75,7 +75,16 @@ main {
 	position: absolute;
 	z-index: -1;
 }
-
+.itemBlock2 .article-img {
+	float: right;
+	width: 5.2rem;
+	margin-left: .4rem;
+	margin-top: 1.8rem;
+}
+.itemBlock2 .article-txt {
+	float: left;
+	width: calc(100% - 5.6rem);
+}
 .itemBlock2 .article-txt>div {
 	display: flex;
 	align-items: center;
@@ -102,7 +111,7 @@ main {
 	font-size: .22rem;
 	color: rgba(0, 0, 0, .85);
 	font-family: Avenir-Roman;
-	line-height: .32rem;
+	line-height: .34rem;
 	margin-top: .32rem;
 }
 .itemBlock2 .article-txt p:last-child {
@@ -121,11 +130,10 @@ main {
 	height: 2.56rem;
 }
 .itemBlock2 .decorative-imageBox .decorativeImg_3 {
-	left: 50%;
-	transform: translateX(-50%);
-	bottom: 1.76rem;
-	width: 6.6rem;
-	height: 2.08rem;
+	left: 2.2rem;
+	bottom: 1.6rem;
+	width: 4.42rem;
+	height: 4.44rem;
 }
 
 .itemBlock3 .article-txt p {
@@ -242,7 +250,7 @@ main {
 	border-top: .01rem solid rgba(0, 0, 0, .1);
 }
 .itemBlock3 .btn-box {
-	margin-top: .56rem;
+	margin-top: -0.48rem;
 	justify-content: flex-end;
 }
 .itemBlock3 .btn-box a {
