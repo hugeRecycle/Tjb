@@ -76,13 +76,12 @@ main {
 	z-index: -1;
 }
 .itemBlock2 .article-img {
-	float: right;
 	width: 5.2rem;
-	margin-left: .4rem;
-	margin-top: 1.8rem;
+	position: absolute;
+    right: 1.2rem;
+    top: 40%;
 }
 .itemBlock2 .article-txt {
-	float: left;
 	width: calc(100% - 5.6rem);
 }
 .itemBlock2 .article-txt>div {
@@ -108,10 +107,10 @@ main {
 	margin-top: .08rem;
 }
 .itemBlock2 .article-txt p {
-	font-size: .22rem;
+	font-size: .2rem;
 	color: rgba(0, 0, 0, .85);
 	font-family: Avenir-Roman;
-	line-height: .34rem;
+	line-height: .29rem;
 	margin-top: .32rem;
 }
 .itemBlock2 .article-txt p:last-child {
@@ -130,10 +129,13 @@ main {
 	height: 2.56rem;
 }
 .itemBlock2 .decorative-imageBox .decorativeImg_3 {
-	left: 2.2rem;
-	bottom: 1.6rem;
-	width: 4.42rem;
-	height: 4.44rem;
+	left: 2.6rem;
+	bottom: 1.35rem;
+	width: 3.58rem;
+	height: 3.6rem;
+}
+.itemBlock2 .btn-box {
+	margin-top: .32rem;
 }
 
 .itemBlock3 .article-txt p {
