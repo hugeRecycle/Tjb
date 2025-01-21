@@ -74,12 +74,13 @@ img {
 }
 .header-box .logo-box img {
 	width: 1.6rem;
-	height: .36rem;
+	height: .58rem;
 	display: block;
 	object-fit: cover;
 }
 .header-box .logo-box a:nth-child(2) img {
 	width: 1.98rem;
+	height: .36rem;
 	margin-right: 0;
 }
 
