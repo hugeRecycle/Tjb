@@ -11,7 +11,12 @@ main {
 	display: flex !important;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
+	background-color: #F5F5F5;
 } 
+.itemBlock:nth-child(2n) {
+	background-color: #fff;
+}
 .banner-box {
 	margin-top: 0;
 }
@@ -75,11 +80,25 @@ main {
 	position: absolute;
 	z-index: -1;
 }
+.itemBlock2 {
+	position: relative;
+}
+.itemBlock2 .article-img img {
+	object-fit: fill;
+}
+.itemBlock2 .container-box{
+	padding: .72rem 1.2rem .42rem;
+}
+.itemBlock2 h5 {
+	margin-bottom: .36rem;
+}
 .itemBlock2 .article-img {
-	width: 5.2rem;
+	width: 8.8rem;
+	height: 100%;
 	position: absolute;
-    right: 1.2rem;
-    top: 40%;
+    right: 0;
+    top: 0;
+	z-index: 1;
 }
 .itemBlock2 .article-txt {
 	width: calc(100% - 5.6rem);
@@ -87,6 +106,7 @@ main {
 .itemBlock2 .article-txt>div {
 	display: flex;
 	align-items: center;
+	margin-bottom: .32rem;
 }
 .itemBlock2 .article-txt>div img {
 	width: 1.4rem;
@@ -111,10 +131,6 @@ main {
 	color: rgba(0, 0, 0, .85);
 	font-family: Avenir-Roman;
 	line-height: .29rem;
-	margin-top: .32rem;
-}
-.itemBlock2 .article-txt p:last-child {
-	margin-top: .12rem;
 }
 .itemBlock2 .decorative-imageBox .decorativeImg_1 {
 	left: 0;
@@ -123,32 +139,85 @@ main {
 	height: 2.97rem;
 }
 .itemBlock2 .decorative-imageBox .decorativeImg_2 {
-	right: 0;
-	top: 0;
-	width: 3.33rem;
-	height: 2.56rem;
-}
-.itemBlock2 .decorative-imageBox .decorativeImg_3 {
-	left: 2.6rem;
-	bottom: 1.35rem;
-	width: 3.58rem;
-	height: 3.6rem;
+    left: 1.5rem;
+    top: 2.06rem;
+	width: 4.6rem;
+	height: 4.62rem;
 }
 .itemBlock2 .btn-box {
-	margin-top: .32rem;
+	margin-top: .56rem;
 }
 
-.itemBlock3 .article-txt p {
+
+.itemBlock3 .wordCloud-box {
+	float: left;
+	width: 5.6rem;
+	height: 3.8rem;
+}
+.itemBlock3 .wordCloudDetail-box {
+	float: right;
+	width: 5.6rem;
+	margin-left: .8rem;
+	padding-top: .2rem;
+	position: relative;
+}
+.itemBlock3 .wordCloudDetail-box::before {
+	position: absolute;
+	content: "";
+	background-color: #275190;
+	width: 100%;
+	height: .05rem;
+	left: 0;
+    top: 0;
+}
+.itemBlock3 .wordCloudDetail-box p {
+	margin-top: .12rem;
+	font-size: .22rem;
+	line-height: .3rem;
+	color: rgba(0, 0, 0, .65);
+	font-family: Avenir-Roman;
+	width: 5.12rem;
+}
+.itemBlock3 .wordCloudDetail-box p:first-child {
+	font-size: .24rem;
+	line-height: .33rem;
 	color: rgba(0, 0, 0, .85);
 	font-family: Avenir-Medium;
 	font-weight: 500;
 }
-.itemBlock3 .newsSwiper {
+.itemBlock3 .decorative-imageBox .decorativeImg_3 {
+    right: .8rem;
+    top: .72rem;
+	width: 6.4rem;
+	height: 5.48rem;
+}
+
+
+.itemBlock4 {
+	flex-direction: column;
+}
+.itemBlock4 .article-txt {
+	position: relative;
+}
+.itemBlock4 .boxH {
+	width: 100%;
+    height: calc(100% - 1.48rem);
+	overflow: hidden;
+    position: relative;
+	display: flex;
+    align-items: center;
+}
+.itemBlock4 .article-txt p {
+	color: rgba(0, 0, 0, .85);
+	font-family: Avenir-Medium;
+	font-weight: 500;
+}
+.itemBlock4 .newsSwiper {
 	width: 5rem;
 	float: left;
 	position: relative;
 }
-.itemBlock3 .newsSwiper  .swiper-slide {
+.itemBlock4 .newsSwiper  .swiper-slide {
 	background-color: #F5F5F5;
 }
 .newsSwiper .swiper-button-prev,
@@ -190,57 +259,57 @@ main {
 	border-radius: .13rem;
 	opacity: 1;
 }
-.itemBlock3 .newsSwiper img {
+.itemBlock4 .newsSwiper img {
 	width: 100%;
 	height: 3.8rem;
 }
-.itemBlock3 .newsSwiper .swiper-slide>div {
+.itemBlock4 .newsSwiper .swiper-slide>div {
 	padding: .22rem .24rem .24rem;
 }
-.itemBlock3 .newsSwiper p:first-child {
+.itemBlock4 .newsSwiper p:first-child {
 	font-size: .15rem;
 	line-height: .2rem;
 	color: rgba(0, 0, 0, .45);
 	font-family: Avenir-Roman;
 	margin-top: 0;
 }
-.itemBlock3 .newsSwiper p {
+.itemBlock4 .newsSwiper p {
 	font-size: .2rem;
 	line-height: .27rem;
 	margin-top: .12rem;
 }
-.itemBlock3 .newsSwiper p:last-child {
+.itemBlock4 .newsSwiper p:last-child {
 	margin-top: .1rem;
 	color: rgba(0, 0, 0, .65);
 	font-size: .17rem;
 	line-height: .23rem;
 }
-.itemBlock3 .newsSwiper p>a {
+.itemBlock4 .newsSwiper p>a {
 	color: #0C3375;
 }
-.itemBlock3 .article-txt ul {
+.itemBlock4 .article-txt ul {
 	width: 6.44rem;
 	float: right;
 	margin-left: .56rem;
 }
-.itemBlock3 .article-txt ul li {
+.itemBlock4 .article-txt ul li {
 	padding: .12rem 0;
 	border-bottom: .01rem solid rgba(0, 0, 0, .1);
 	cursor: pointer;
 }
-.itemBlock3 .article-txt ul li.active,
-.itemBlock3 .article-txt ul li:hover {
+.itemBlock4 .article-txt ul li.active,
+.itemBlock4 .article-txt ul li:hover {
 	background-color: #F5F5F5;
 	padding-left: .12rem;
 }
-.itemBlock3 .article-txt ul li p:first-child {
+.itemBlock4 .article-txt ul li p:first-child {
 	font-size: .14rem;
 	line-height: .19rem;
 	color: rgba(0, 0, 0, .45);
 	font-family: Avenir-Roman;
 	margin-top: 0;
 }
-.itemBlock3 .article-txt ul li p {
+.itemBlock4 .article-txt ul li p {
 	font-size: .16rem;
 	line-height: .22rem;
 	margin-top: .06rem;
@@ -248,69 +317,13 @@ main {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.itemBlock3 .article-txt ul li:first-child {
+.itemBlock4 .article-txt ul li:first-child {
 	border-top: .01rem solid rgba(0, 0, 0, .1);
 }
-.itemBlock3 .btn-box {
+.itemBlock4 .btn-box {
 	margin-top: -0.48rem;
 	justify-content: flex-end;
 }
-.itemBlock3 .btn-box a {
+.itemBlock4 .btn-box a {
 	width: 2.48rem;
-}
-.itemBlock4 {
-	flex-direction: column;
-}
-.itemBlock4 .article-txt {
-	position: relative;
-}
-.itemBlock4 .boxH {
-	width: 100%;
-    height: calc(100% - 1.48rem);
-	overflow: hidden;
-    position: relative;
-	display: flex;
-    align-items: center;
-}
-.itemBlock4 .wordCloud-box {
-	float: left;
-	width: 5.6rem;
-	height: 3.8rem;
-}
-.itemBlock4 .wordCloudDetail-box {
-	float: right;
-	width: 5.6rem;
-	margin-left: .8rem;
-	padding-top: .2rem;
-	position: relative;
-}
-.itemBlock4 .wordCloudDetail-box::before {
-	position: absolute;
-	content: "";
-	background-color: #275190;
-	width: 100%;
-	height: .05rem;
-	left: 0;
-    top: 0;
-}
-.itemBlock4 .wordCloudDetail-box p {
-	margin-top: .12rem;
-	font-size: .22rem;
-	line-height: .3rem;
-	color: rgba(0, 0, 0, .65);
-	font-family: Avenir-Roman;
-	width: 5.12rem;
-}
-.itemBlock4 .wordCloudDetail-box p:first-child {
-	font-size: .24rem;
-	line-height: .33rem;
-	color: rgba(0, 0, 0, .85);
-	font-family: Avenir-Medium;
-	font-weight: 500;
-}
-.itemBlock4 .decorative-imageBox .decorativeImg_4 {
-	right: .5rem;
-    bottom: .5rem;
-	width: 4.6rem;
-	height: 2.8rem;
 }

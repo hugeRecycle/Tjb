@@ -45,6 +45,26 @@
 }
 .itemBlock .container-box .item .mask {
 	width: 100%;
+	height: 1.12rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    background-color: rgba(0, 0, 0, .4);
+	font-size: .28rem;
+	color: #FFFFFF;
+	line-height: .38rem;
+	font-family: Avenir-Medium;
+	font-weight: 500;
+}
+.itemBlock .container-box .item:hover .mask {
+    display: none;
+}
+
+.itemBlock .container-box .item .hover_mask {
+	width: 100%;
 	height: 100%;
 	position: absolute;
 	top: 0;
@@ -52,23 +72,27 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
     background-color: rgba(0, 0, 0, .6);
-    display: none;
-}
-.itemBlock .container-box .item .mask>div {
-	width: 1.5rem;
-    height: .55rem;
-    padding-top: .04rem;
-	background-color: #FFFFFF;
-	font-size: .17rem;
-	color: #0C3375;
+	font-size: .28rem;
+	color: #FFFFFF;
+	line-height: .38rem;
 	font-family: Avenir-Medium;
 	font-weight: 500;
-    border: .01rem solid #0C3375;
+	display: none;
+}
+.itemBlock .container-box .item .hover_mask>div {
+	width: 1.02rem;
+    height: .32rem;
+    margin-top: .06rem;
+	background-color: #2357A5;
+	font-size: .12rem;
+	color: #FFFFFF;
+	padding-top: .02rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.itemBlock .container-box .item:hover .mask {
-    display: flex;
+.itemBlock .container-box .item:hover .hover_mask {
+	display: flex;
 }

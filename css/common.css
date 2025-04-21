@@ -73,8 +73,8 @@ img {
 	margin-right: 0;
 }
 .header-box .logo-box img {
-	/* width: 1.6rem; */
-	height: .58rem;
+	width: 1.68rem;
+	height: .4rem;
 	display: block;
 	object-fit: cover;
 }
@@ -193,6 +193,9 @@ img {
 	width: 1.84rem;
 	height: .58rem;
 	display: block;
+}
+.footer-box .logo-box img:nth-child(2) {
+	width: 1.93rem;
 }
 .footer-box .labInfo-box {
 	width: 5.7rem;
