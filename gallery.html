@@ -1,133 +1,442 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport" />
-		<title>Gallery</title>
-		<link rel="shortcut icon" href="./favicon.ico">
-		<link rel="stylesheet" type="text/css" href="./css/common.css" />
-		<link rel="stylesheet" type="text/css" href="./css/gallery.css" />
-        <link rel="stylesheet" type="text/css" href="./css/swiper-bundle.min.css">
-		<script src="./js/jquery-2.1.4.min.js"></script>
-        <script src="./js/swiper-bundle.min.js"></script>
-	</head>
-	<body>
-		<header class="header-box">
-			<div class="logo-box">
-                <a>
-                    <img src="./img/icon_headerLogo_l.png" title="西湖大学" />
-                </a>
-				<a href="https://www.westlake.edu.cn/" target="_blank">
-                    <img src="./img/icon_headerLogo_r.png" title="西湖大学" />
-                </a>
-            </div>
-			<nav class="menu-box">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="news.html">News</a></li>
-					<li><a href="research.html">Research<img src="./img/icon_arrowDown.png" /></a>
-						<ul class="childList">
-							<li><a href="researchTheme.html">Research Theme 1</a></li>
-							<li><a>Research Theme 2</a></li>
-						</ul>
-					</li>
-					<li><a href="gallery.html">Gallery<img src="./img/icon_arrowDown.png" /></a>
-						<ul class="childList">
-							<li><a href="galleryCategory.html">Gallery category 1</a></li>
-							<li><a>Gallery category 2</a></li>
-						</ul>
-					</li>
-					<li><a href="publications.html">Publications</a></li>
-					<li><a href="team.html">Team</a></li>
-					<li><a href="openings.html">Openings</a></li>
-				</ul>
-			</nav>
-		</header>
-		<section class="banner-box">
-			<img src="./images/research/banner.png" />
-			<div class="banner-content">
-				<div class="txt-box">
-					<h6>Welcome to Gallery !</h6>
-				</div>
-			</div>
-		</section>
-		<main>
-			<div class="itemBlock">
-				<div class="container-box">
-					<h5>Gallery category 1</h5>
-                    <p>We are an experimental group working at the forefronts of the materials science and engineering of liquid metals. Our research is highly interdisciplinary in terms of both the material systems involved and the methodologies applied. The following themes outline our current research interest.The following themes outline our current research interest.s involved and the methodologies applied. The following themes outline our current research interest.The following themes outline our current research interest.</p>
-                    <div>
-                        <div class="swiper gallerySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="./images/gallery/img_1.png" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="./images/gallery/img_1.png" />
-                                </div>
-                            </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div>
-                        <div class="img-list" id="img-list">
-                            <img data-slide="0" src="./images/gallery/img_2.png" />
-                            <img data-slide="1" src="./images/gallery/img_2.png" />
-                            <img src="./images/gallery/img_2.png" />
-                            <a href="./galleryCategory.html">LEARN MORE</a>
-                        </div>
-                        <div class="clean"></div>
-                    </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport">
+    <title>Gallery - Tang Research Group</title>
+    <meta name="keywords" content="Tang Research Group">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/gallery.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/setRem.js"></script>
+</head>
+<body>
+<header class="header-box">
+    <div class="logo-box">
+        <a>
+            <img src="images/home/homepagelogo_dark_gray.png" alt="">
+        </a>
+        <a href="https://www.westlake.edu.cn/" target="_blank">
+            <img src="img/icon_headerLogo_r.png" alt="">
+        </a>
+    </div>
+    <nav class="menu-box">
+        <ul id="pc-menu1">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="News.html">News</a>
+            </li>
+            <li>
+                <a href="Research.html">Research</a>
+            </li>
+            <li class="active">
+                <a href="Gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a href="Publications.html">Publications</a>
+            </li>
+            <li>
+                <a href="Team.html">Team</a>
+            </li>
+            <li>
+                <a href="Openings.html">Openings</a>
+            </li>
+        </ul>
+        <ul id="pc-menu2">
+            <li>
+                <a href="zh/sy.htm">首页</a>
+            </li>
+            <li>
+                <a href="zh/xw.htm">新闻</a>
+            </li>
+            <li>
+                <a href="zh/yjnr.htm">研究内容</a>
+            </li>
+            <li>
+                <a href="zh/hl.htm">画廊</a>
+            </li>
+            <li>
+                <a href="zh/xscg.htm">学术成果</a>
+            </li>
+            <li>
+                <a href="zh/td.htm">团队</a>
+            </li>
+            <li>
+                <a href="zh/zp.htm">招聘</a>
+            </li>
+
+        </ul>
+        <script type="text/javascript">
+            var isZh = location.href.includes("zh");
+            if (!isZh) {
+                document.getElementById('pc-menu1').style.display = "flex";
+                document.getElementById('pc-menu2').style.display = "none";
+            } else {
+                document.getElementById('pc-menu1').style.display = "none";
+                document.getElementById('pc-menu2').style.display = "flex";
+            }
+        </script>
+    </nav>
+    <div class="language-box" id="langBtn">
+        <img src="img/icon_language.png" alt="">
+        <span>CN</span>
+    </div>
+</header>
+<section class="banner-box">
+
+    <img src="images/GALLERY_BANNER.png">
+    <div class="banner-content">
+        <div class="txt-box">
+            <p><br></p>
+        </div>
+    </div>
+</section>
+<main>
+    <div class="itemBlock itemBlock1">
+        <div class="container-box">
+            <h5>Liquid-Metal-Grown Crystals</h5>
+            <p>Beyond their scientific and technological significance, crystals grown from a liquid metal solvent can be
+                visually appealing. We were fortunate to have observed a variety of intriguing crystal structures that
+                we think might worth sharing.</p>
+            <div>
+                <div class="swiper gallerySwiper" id="swiper1">
+                    <div class="swiper-wrapper"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
-			</div>
-		</main>
-		<footer class="footer-box">
-			<div class="logo-box">
-				<img src="./img/icon_footerLogo_l.png">
-				<img src="./img/icon_footerLogo_r.png">
-			</div>
-			<div class="labInfo-box">
-				<a href="joinus.html">Join us</a>
-				<p><span>Email :</span> jianbotang@westlake.edu.cn</p>
-				<p><span>Lab :</span> E3-101A&B, Yungu Campus, Westlake University</p>
-				<p><span>Address :</span> No. 600 Dunyu Road, XihuDistrict, Hangzhou, Zhejiang, 310030, PR. China</p>
-			</div>
-			<div class="filings-box">
-				<p><a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备18025489号</a></p>
-				<p>浙公安备33010602007514号</p>
-				<p>Copyright © Westlake University. All Rights Reserved</p>
-			</div>
-		</footer>
-		<script>
-			$(function(){
-				function setRem(designSize) {
-					let html = document.documentElement;
-					let width = html.clientWidth;
-					width = width >= 1440 ? 1440 : width;
-			     	html.style.fontSize = width / designSize + 'px'; // 设计稿宽度为1440px，那么1rem=100px，故除以14.4
-				}
-				setRem(14.4);
-				window.onresize = function() {
-					setRem(14.4);
-				};
-                var gallerySwiper = new Swiper(".gallerySwiper", {
-                    autoplay: {
-                        delay: 2500,
-                        disableOnInteraction: false
-                    },
-                    direction: "horizontal",
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev"
-                    }
+                <div class="swiper img-list" id="imgListSwiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img data-slide="1"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588367"/>
+                            <img data-slide="2"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588366"/>
+                            <img data-slide="3"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588368"/>
+                            <img data-slide="4"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588371"/>
+                            <img data-slide="5"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588370"/>
+                            <img data-slide="6"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588369"/>
+                            <img data-slide="7"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588374"/>
+                            <img data-slide="8"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588372"/>
+                            <img data-slide="9"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588373"/>
+                            <img data-slide="10"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588375"/>
+                            <img data-slide="11"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588376"/>
+                            <img data-slide="12"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588377"/>
+                            <img data-slide="13"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588379"/>
+                            <img data-slide="14"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588380"/>
+                            <img data-slide="15"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588378"/>
+                            <img data-slide="16"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588381"/>
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                <div class="clean"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            if ($(".itemBlock1 p").html() == '1') {
+                $(".itemBlock1 p").remove();
+            }
+            $("#imgListSwiper1 img").each(function () {
+                const clonedImg = $(this).clone();
+                const wrapperDiv = $("<div class='swiper-slide'></div>");
+                wrapperDiv.append(clonedImg);
+                $("#swiper1 .swiper-wrapper").append(wrapperDiv);
+            });
+
+            var gallerySwiper1 = new Swiper("#swiper1", {
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false
+                },
+                direction: "horizontal",
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev"
+                }
+            });
+            var imgListSwiper = new Swiper("#imgListSwiper1", {
+                direction: "vertical",
+                slidesPerView: "auto",
+                freeMode: true,
+                scrollbar: {
+                    el: ".swiper-scrollbar",
+                    dragSize: 100,   //滚动条滑块的长度
+                    draggable: true,  //滚动条可拖拽可点击
+                },
+                mousewheel: true,
+            });
+
+            var imgItems = document.querySelectorAll('#imgListSwiper1 img');
+            imgItems.forEach(function (item, index) {
+                item.setAttribute("data-slide", index);
+                item.addEventListener('click', function () {
+                    var index = this.getAttribute('data-slide');
+                    gallerySwiper1.slideTo(index);
                 });
-                var imgItems = document.querySelectorAll('#img-list>img');
-                imgItems.forEach(function(item) {
-                    item.addEventListener('click', function() {
-                        var index = this.getAttribute('data-slide');
-                        gallerySwiper.slideTo(index);
-                    });
+            });
+
+        })
+    </script>
+    <div class="itemBlock itemBlock2">
+        <div class="container-box">
+            <h5>Surface Solidification Patterns</h5>
+            <p>Self-organized structures develop autonomously during the solidification of metals and alloys, and
+                solidification structures are known to have multi-facet influences. In studying the solidification of
+                liquid metal alloys, we observed a surface specific phenomenon different from the more familiar bulk
+                solidification, which gives rise to easy-to-observe surface patterns.</p>
+            <div>
+                <div class="swiper gallerySwiper" id="swiper2">
+                    <div class="swiper-wrapper"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="swiper img-list" id="imgListSwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img data-slide="1"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588417"/>
+                            <img data-slide="2"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588416"/>
+                            <img data-slide="3"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588415"/>
+                            <img data-slide="4"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588412"/>
+                            <img data-slide="5"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588413"/>
+                            <img data-slide="6"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588414"/>
+                            <img data-slide="7"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588411"/>
+                            <img data-slide="8"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588409"/>
+                            <img data-slide="9"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588410"/>
+                            <img data-slide="10"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588408"/>
+                            <img data-slide="11"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588406"/>
+                            <img data-slide="12"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588407"/>
+                            <img data-slide="13"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588405"/>
+                            <img data-slide="14"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588403"/>
+                            <img data-slide="15"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588404"/>
+                            <img data-slide="16"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588401"/>
+                            <img data-slide="17"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588400"/>
+                            <img data-slide="18"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588402"/>
+                            <img data-slide="19"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588397"/>
+                            <img data-slide="20"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588398"/>
+                            <img data-slide="21"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588399"/>
+                            <img data-slide="22"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588396"/>
+                            <img data-slide="23"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588395"/>
+                            <img data-slide="24"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588394"/>
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                <div class="clean"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            if ($(".itemBlock2 p").html() == '1') {
+                $(".itemBlock2 p").remove();
+            }
+            $("#imgListSwiper2 img").each(function () {
+                const clonedImg = $(this).clone();
+                const wrapperDiv = $("<div class='swiper-slide'></div>");
+                wrapperDiv.append(clonedImg);
+                $("#swiper2 .swiper-wrapper").append(wrapperDiv);
+            });
+
+            var gallerySwiper2 = new Swiper("#swiper2", {
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false
+                },
+                direction: "horizontal",
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev"
+                }
+            });
+            var imgListSwiper = new Swiper("#imgListSwiper2", {
+                direction: "vertical",
+                slidesPerView: "auto",
+                freeMode: true,
+                scrollbar: {
+                    el: ".swiper-scrollbar",
+                    dragSize: 100,   //滚动条滑块的长度
+                    draggable: true,  //滚动条可拖拽可点击
+                },
+                mousewheel: true,
+            });
+
+            var imgItems = document.querySelectorAll('#imgListSwiper2 img');
+            imgItems.forEach(function (item, index) {
+                item.setAttribute("data-slide", index);
+                item.addEventListener('click', function () {
+                    var index = this.getAttribute('data-slide');
+                    gallerySwiper2.slideTo(index);
                 });
-			})
-		</script>
-	</body>
+            });
+
+        })
+    </script>
+    <div class="itemBlock itemBlock3">
+        <div class="container-box">
+            <h5>Beyond the Lab</h5>
+            <p>We observe processes and events across length and time scales in a material world, and then we draw
+                inspiration from wild encounters in nature and quotidian moments in life.</p>
+            <div>
+                <div class="swiper gallerySwiper" id="swiper3">
+                    <div class="swiper-wrapper"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="swiper img-list" id="imgListSwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img data-slide="1"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588354"/>
+                            <img data-slide="2"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588350"/>
+                            <img data-slide="3"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588349"/>
+                            <img data-slide="4"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588348"/>
+                            <img data-slide="5"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588347"/>
+                            <img data-slide="6"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588345"/>
+                            <img data-slide="7"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588344"/>
+                            <img data-slide="8"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588346"/>
+                            <img data-slide="9"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588343"/>
+                            <img data-slide="10"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588342"/>
+                            <img data-slide="11"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588341"/>
+                            <img data-slide="12"
+                                 src="system/_content/download.jsp%3Furltype=news.DownloadAttachUrl&amp;owner=2034263579&amp;wbfileid=15588340"/>
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                <div class="clean"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            if ($(".itemBlock3 p").html() == '1') {
+                $(".itemBlock3 p").remove();
+            }
+            $("#imgListSwiper3 img").each(function () {
+                const clonedImg = $(this).clone();
+                const wrapperDiv = $("<div class='swiper-slide'></div>");
+                wrapperDiv.append(clonedImg);
+                $("#swiper3 .swiper-wrapper").append(wrapperDiv);
+            });
+
+            var gallerySwiper3 = new Swiper("#swiper3", {
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false
+                },
+                direction: "horizontal",
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev"
+                }
+            });
+            var imgListSwiper = new Swiper("#imgListSwiper3", {
+                direction: "vertical",
+                slidesPerView: "auto",
+                freeMode: true,
+                scrollbar: {
+                    el: ".swiper-scrollbar",
+                    dragSize: 100,   //滚动条滑块的长度
+                    draggable: true,  //滚动条可拖拽可点击
+                },
+                mousewheel: true,
+            });
+
+            var imgItems = document.querySelectorAll('#imgListSwiper3 img');
+            imgItems.forEach(function (item, index) {
+                item.setAttribute("data-slide", index);
+                item.addEventListener('click', function () {
+                    var index = this.getAttribute('data-slide');
+                    gallerySwiper3.slideTo(index);
+                });
+            });
+
+        })
+    </script>
+    <script>_showDynClickBatch(['dynclicks_u4_1213', 'dynclicks_u4_1214', 'dynclicks_u4_1215'], [1213, 1214, 1215], "wbnews", 2034263579)</script>
+</main>
+<footer class="footer-box">
+    <div class="logo-box"><img src="images/home/yejiaoxihulogo.png">
+
+        <img src="images/homepagelogo_white.png">
+
+    </div>
+    <div class="labInfo-box">
+        <p><a href="Openings.html" target="_self">Join Us</a></p>
+        <p><span>Email :</span> jianbotang@westlake.edu.cn</p>
+        <p><span>Lab :</span> E3-101A&B, Yungu Campus, Westlake University</p>
+        <p><span>Address :</span> No. 600 Dunyu Road, Xihu District, Hangzhou, Zhejiang, 310030, P.R. China</p></div>
+    <div class="filings-box"><!-- 版权内容请在本组件"内容配置-版权"处填写 -->
+        <p><a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备18025489号</a></p>
+        <p>浙公安备33010602007514号</p>
+        <p>Copyright © Westlake University. All Rights Reserved</p></div>
+</footer>
+<script>
+    $(function () {
+        const divs = document.querySelectorAll('main>div[class]');
+        Array.from(divs).forEach((div, index) => {
+            if (index % 2 === 1) {
+                div.style.backgroundColor = '#FFFFFF';
+            }
+        });
+    })
+</script>
+<script src="js/setLanguage.js"></script>
+</body>
 </html>

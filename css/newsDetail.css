@@ -1,3 +1,6 @@
+.bannerSwiper {
+    height: 100%;
+}
 .bannerSwiper .swiper-slide {
 	position: relative;
 }
@@ -73,6 +76,9 @@
 	bottom: -0.25rem !important;
 }
 
+.itemBlock {
+	margin-top: .72rem;
+}
 .back-box {
     max-width: 14.4rem;
     height: .98rem;

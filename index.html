@@ -1,368 +1,658 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport" />
-		<title>Home</title>
-		<link rel="shortcut icon" href="./favicon.ico">
-		<link rel="stylesheet" type="text/css" href="./css/common.css" />
-		<link rel="stylesheet" type="text/css" href="./css/home.css" />
-		<link rel="stylesheet" type="text/css" href="./css/swiper-bundle.min.css">
-		<script src="./js/jquery-2.1.4.min.js"></script>
-		<script src="./js/swiper-bundle.min.js"></script>
-		<script src="./js/d3.min.js"></script>
-		<script src="./js/d3.layout.cloud.js"></script>
-	</head>
-	<body>
-		<header class="header-box">
-			<div class="logo-box">
-                <a>
-                    <img src="./img/icon_headerLogo_l.png" title="西湖大学" />
-                </a>
-				<a href="https://www.westlake.edu.cn/" target="_blank">
-                    <img src="./img/icon_headerLogo_r.png" title="西湖大学" />
-                </a>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport">
+    <title>Tang Research Group</title>
+    <meta name="keywords" content="Tang Research Group">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="js/d3.layout.cloud.js"></script>
+    <script src="js/setRem.js"></script>
+</head>
+<body>
+<header class="header-box">
+    <div class="logo-box">
+        <a>
+            <img src="images/home/homepagelogo_dark_gray.png" alt="">
+        </a>
+        <a href="https://www.westlake.edu.cn/" target="_blank">
+            <img src="img/icon_headerLogo_r.png" alt="">
+        </a>
+    </div>
+    <nav class="menu-box">
+        <ul id="pc-menu1">
+            <li class="active">
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="News.html">News</a>
+            </li>
+            <li>
+                <a href="Research.html">Research</a>
+            </li>
+            <li>
+                <a href="Gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a href="Publications.html">Publications</a>
+            </li>
+            <li>
+                <a href="Team.html">Team</a>
+            </li>
+            <li>
+                <a href="Openings.html">Openings</a>
+            </li>
+        </ul>
+        <ul id="pc-menu2">
+            <li>
+                <a href="zh/sy.htm">首页</a>
+            </li>
+            <li>
+                <a href="zh/xw.htm">新闻</a>
+            </li>
+            <li>
+                <a href="zh/yjnr.htm">研究内容</a>
+            </li>
+            <li>
+                <a href="zh/hl.htm">画廊</a>
+            </li>
+            <li>
+                <a href="zh/xscg.htm">学术成果</a>
+            </li>
+            <li>
+                <a href="zh/td.htm">团队</a>
+            </li>
+            <li>
+                <a href="zh/zp.htm">招聘</a>
+            </li>
+        </ul>
+        <script type="text/javascript">
+            var isZh = location.href.includes("zh");
+            if (!isZh) {
+                document.getElementById('pc-menu1').style.display = "flex";
+                document.getElementById('pc-menu2').style.display = "none";
+            } else {
+                document.getElementById('pc-menu1').style.display = "none";
+                document.getElementById('pc-menu2').style.display = "flex";
+            }
+        </script>
+    </nav>
+    <div class="language-box" id="langBtn">
+        <img src="img/icon_language.png" alt="">
+        <span>CN</span>
+    </div>
+</header>
+
+<main class="swiper pageSwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide itemBlock banner-box">
+            <div class="swiper bannerSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/home/banner2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/home/shouyebanner1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
-			<nav class="menu-box">
-				<ul>
-					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="news.html">News</a></li>
-					<li><a href="research.html">Research<img src="./img/icon_arrowDown.png" /></a>
-						<ul class="childList">
-							<li><a href="researchTheme.html">Research Theme 1</a></li>
-							<li><a>Research Theme 2</a></li>
-						</ul>
-					</li>
-					<li><a href="gallery.html">Gallery<img src="./img/icon_arrowDown.png" /></a>
-						<ul class="childList">
-							<li><a href="galleryCategory.html">Gallery category 1</a></li>
-							<li><a>Gallery category 2</a></li>
-						</ul>
-					</li>
-					<li><a href="publications.html">Publications</a></li>
-					<li><a href="team.html">Team</a></li>
-					<li><a href="openings.html">Openings</a></li>
-				</ul>
-			</nav>
-		</header>
+        </div>
+        <div class="swiper-slide itemBlock itemBlock2">
+            <div class="container-box">
+                <div class="shapeBox"
+                     style="shape-outside:url(https://tang.lab.westlake.edu.cn/_vsl/F341B5714B8CDBFCF7A7213CC59DE881/9E94684F/8C8E5?e=.png)">
+                    <img src="__local/F/34/1B/5714B8CDBFCF7A7213CC59DE881_9E94684F_8C8E5.png%3Fe=.png" vsbhref="vurl"
+                         vurl="/_vsl/F341B5714B8CDBFCF7A7213CC59DE881/9E94684F/8C8E5?e=.png" vheight="" vwidth=""
+                         orisrc="/__local/F/34/1B/5714B8CDBFCF7A7213CC59DE881_9E94684F_8C8E5.png"
+                         class="img_vsb_content">
+                </div>
+                <h5> ABOUT US </h5>
+                <div class="nameBox">
+                    <img src="__local/E/2C/08/1742C2A0CF493C198676A8E7175_E74F9F93_31FE8.png%3Fe=.png" vsbhref="vurl"
+                         vurl="/_vsl/E2C081742C2A0CF493C198676A8E7175/E74F9F93/31FE8?e=.png" vheight="" vwidth=""
+                         orisrc="/__local/E/2C/08/1742C2A0CF493C198676A8E7175_E74F9F93_31FE8.png"
+                         class="img_vsb_content">
+                    <div>
+                        <span class="nameSpan">Dr. Jianbo Tang</span>
+                        <span class="titleSpan">Principle Investigator</span>
+                    </div>
+                </div>
+                <div class="article-txt">
+                    <p> At the<em> New Phase Metallics and Manufacturing Laboratory</em> (the NPMM Lab) we work at the
+                        forefront of liquid metals—a family of low-melting-temperature metals and alloys that, despite
+                        their long history, have not received substantial attention until recently. We find interest in
+                        fundamental questions that drive scientific breakthroughs and inspire engineering innovations.
+                        Our liquid metal-focused research is highly interdisciplinary in terms of both the material
+                        systems involved and the methodologies employed. In a new phase of making and utilizing metallic
+                        materials, we aim to create transformative impact through the ways of liquid metals. </p>
+                    <p><br></p>
+                    <p> The NPMM Lab is part of the Department of Materials Science and Engineering within the School of
+                        Engineering at Westlake University. </p>
+                </div>
+                <div class="btn-box">
+                    <a href="Research.html" target="_self">NPMM RESEARCH</a>
+                </div>
+                <div class="decorative-imageBox">
+                    <img src="__local/9/B1/82/D39BF84A8816DE45ADDDE415C5B_61DCD527_1749.png%3Fe=.png" vsbhref="vurl"
+                         vurl="/_vsl/9B182D39BF84A8816DE45ADDDE415C5B/61DCD527/1749?e=.png" vheight="462" vwidth="460"
+                         width="460" height="462" border="0" vspace="0" hspace="0" title="" alt=""
+                         orisrc="/__local/9/B1/82/D39BF84A8816DE45ADDDE415C5B_61DCD527_1749.png"
+                         class="img_vsb_content">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide itemBlock itemBlock3">
+            <div class="container-box">
+                <div class="title-box">
+                    <p> Navigate the NPMM Lab </p>
+                    <p> Interactive Keyword Cloud </p></div>
+                <div class="wordCloudDetail-box" id="wordCloudList">
+                    <div data-type="OXIDATION">
+                        <p>OXIDATION</p>
+                        <p>Oxidation transforms metals into semiconducting metal oxides</p>
+                    </div>
+                    <div data-type="DROPLETS">
+                        <p>DROPLETS</p>
+                        <p>Droplets are capillary objects. Small volumes of liquid metals are very likely to form
+                            droplets owing to their high surface tension. Liquid metal droplets are often shielded by an
+                            easy-to-overlook thin oxide layer</p>
+                    </div>
+                    <div data-type="METALLICS">
+                        <p>METALLICS</p>
+                        <p>Yes! We carry out metal-intensive research at the NPMM Lab. With a strong focus on liquid
+                            metals, our interest extends to metals and alloys in a more general context, metal
+                            derivatives (e.g., metal oxides), as well as other non-metallics processable using liquid
+                            metals</p>
+                    </div>
+                    <div data-type="NEW PHASE">
+                        <p>NEW PHASE</p>
+                        <p>A new material phase—what we always look for in daily experiments! A transformative era
+                            reshaping how we process and utilize metals and alloys</p>
+                    </div>
+                    <div data-type="APPLICATIONS">
+                        <p>APPLICATIONS</p>
+                        <p></p>
+                    </div>
+                    <div data-type="LIQUID METALS">
+                        <p>LIQUID METALS</p>
+                        <p>A unique state of metallic matter that is easy melting, free flowing when melted,
+                            electrically/thermally conductive, atomically frustrated yet dynamic, and chemically active.
+                            These futuristic-looking metallic liquids can have surprising properties and behaviors</p>
+                    </div>
+                    <div data-type="INTERMETALLIC">
+                        <p>INTERMETALLIC</p>
+                        <p>A tale of long-range-order compound metals</p>
+                    </div>
+                    <div data-type="MANUFACTURING">
+                        <p>MANUFACTURING</p>
+                        <p>Our material manufacturing practices combine cross-disciplinary methodologies to drive
+                            technological innovations. We aim to manipulate material structures/properties at the
+                            smallest possible scale while achieving large-scale, high-throughput production</p>
+                    </div>
+                    <div data-type="CRYSTAL GROWTH">
+                        <p>CRYSTAL GROWTH</p>
+                        <p>Crystals grown in our lab have a strong metallic flavor. We use liquid metal solvents to grow
+                            crystals with well-defined phases and shapes</p>
+                    </div>
+                    <div data-type="PATTERN FORMATION">
+                        <p>PATTERN FORMATION</p>
+                        <p>A usually autonomous but describable structural evolution process in developmental material
+                            systems</p>
+                    </div>
+                    <div data-type="WETTING &amp; SPREADING">
+                        <p>WETTING &amp; SPREADING</p>
+                        <p>The dance of a liquid (metal) phase trying to balance the three-phase contact line</p>
+                    </div>
+                    <div data-type="ALLOYING/DEALLOYING">
+                        <p>ALLOYING/DEALLOYING</p>
+                        <p>Performing addition/subtraction operations by forming, breaking or rearranging metallic
+                            bonds</p>
+                    </div>
+                    <div data-type="PHASE TRANSFORMATION">
+                        <p>PHASE TRANSFORMATION</p>
+                        <p>The Times The Phases Are a-Changin</p>
+                    </div>
+                    <div data-type="SPONTANEOUS PROCESSES">
+                        <p>SPONTANEOUS PROCESSES</p>
+                        <p>We are interested in (controlling) spontaneous processes such as phase transformation,
+                            oxidation, alloying, dealloying, wetting/spreading</p>
+                    </div>
+                    <div data-type="SURFACE-CRETICAL PHENOMENA">
+                        <p>SURFACE-CRETICAL PHENOMENA</p>
+                        <p>A material's surface can behave (e.g., melt, solidify, form structures, or react) rather
+                            differently compared to its bulk. This is particularly true when it comes to dynamic liquid
+                            metal systems</p>
+                    </div>
+                    <div data-type="INTERMETALLIC WETTING/REACTION">
+                        <p>INTERMETALLIC WETTING/REACTION</p>
+                        <p>An irreversible wetting state resulting from the intimate (direct) interfacial contact
+                            established by a suitable metallic liquid-solid couple, usually involves interdiffusion and
+                            new phase formation</p>
+                    </div>
+                    <div data-type="Ordering">
+                        <p>Ordering</p>
+                        <p></p>
+                    </div>
+                    <div data-type="Catalysts">
+                        <p>Catalysts</p>
+                        <p></p>
+                    </div>
+                    <div data-type="Thin Films">
+                        <p>Thin Films</p>
+                        <p></p>
+                    </div>
+                    <div data-type="Electronics">
+                        <p>Electronics</p>
+                        <p></p>
+                    </div>
+                    <div data-type="Instabilities">
+                        <p>Instabilities</p>
+                        <p></p>
+                    </div>
+                    <div data-type="Composites">
+                        <p>Composites</p>
+                        <p></p>
+                    </div>
+                    <div data-type="Bio Sensing">
+                        <p>Bio Sensing</p>
+                        <p></p>
+                    </div>
+                    <div data-type="Soft Matters">
+                        <p>Soft Matters</p>
+                        <p></p>
+                    </div>
+                    <div data-type="Gas Sensing">
+                        <p>Gas Sensing</p>
+                        <p></p>
+                    </div>
+                    <div data-type="Surface Flows">
+                        <p>Surface Flows</p>
+                        <p></p>
+                    </div>
+                    <div data-type="Fluids &amp; Flows">
+                        <p>Fluids &amp; Flows</p>
+                        <p></p>
+                    </div>
+                    <div data-type="Optoelectronics">
+                        <p>Optoelectronics</p>
+                        <p></p>
+                    </div>
+                    <div data-type="Self-Assembling">
+                        <p>Self-Assembling</p>
+                        <p></p>
+                    </div>
+                    <div data-type="Electrochemistry">
+                        <p>Electrochemistry</p>
+                        <p></p>
+                    </div>
+                    <div data-type="Self-Organization">
+                        <p>Self-Organization</p>
+                        <p></p>
+                    </div>
+                    <div data-type="Nanoporous Metals">
+                        <p>Nanoporous Metals</p>
+                        <p></p>
+                    </div>
+                    <div data-type="Material Intelligence">
+                        <p>Material Intelligence</p>
+                        <p></p>
+                    </div>
+                    <div data-type="Biomimetic Systems">
+                        <p>Biomimetic Systems</p>
+                        <p></p>
+                    </div>
+                    <div data-type="Thermal Management">
+                        <p>Thermal Management</p>
+                        <p></p>
+                    </div>
+                    <div data-type="Nature-Inspired Design">
+                        <p>Nature-Inspired Design</p>
+                        <p></p>
+                    </div>
+                    <div data-type="Liquid Phase Processing">
+                        <p>Liquid Phase Processing</p>
+                        <p></p>
+                    </div>
+                    <div data-type="Advanced Manufacturing">
+                        <p>Advanced Manufacturing</p>
+                        <p></p>
+                    </div>
+                    <div data-type="Thermal Interface Materials">
+                        <p>Thermal Interface Materials</p>
+                        <p></p>
+                    </div>
+                    <script>_showDynClickBatch(['dynclicks_u5_1170', 'dynclicks_u5_1184', 'dynclicks_u5_1163', 'dynclicks_u5_1162', 'dynclicks_u5_1187', 'dynclicks_u5_1165', 'dynclicks_u5_1172', 'dynclicks_u5_1164', 'dynclicks_u5_1171', 'dynclicks_u5_1168', 'dynclicks_u5_1183', 'dynclicks_u5_1169', 'dynclicks_u5_1167', 'dynclicks_u5_1166', 'dynclicks_u5_1181', 'dynclicks_u5_1182', 'dynclicks_u5_1175', 'dynclicks_u5_1189', 'dynclicks_u5_1179', 'dynclicks_u5_1192', 'dynclicks_u5_1174', 'dynclicks_u5_1178', 'dynclicks_u5_1191', 'dynclicks_u5_1180', 'dynclicks_u5_1190', 'dynclicks_u5_1186', 'dynclicks_u5_1185', 'dynclicks_u5_1193', 'dynclicks_u5_1176', 'dynclicks_u5_1188', 'dynclicks_u5_1177', 'dynclicks_u5_1173', 'dynclicks_u5_1198', 'dynclicks_u5_1196', 'dynclicks_u5_1194', 'dynclicks_u5_1197', 'dynclicks_u5_1200', 'dynclicks_u5_1199', 'dynclicks_u5_1195'], [1170, 1184, 1163, 1162, 1187, 1165, 1172, 1164, 1171, 1168, 1183, 1169, 1167, 1166, 1181, 1182, 1175, 1189, 1179, 1192, 1174, 1178, 1191, 1180, 1190, 1186, 1185, 1193, 1176, 1188, 1177, 1173, 1198, 1196, 1194, 1197, 1200, 1199, 1195], "wbnews", 2034263579)</script>
+                </div>
+                <div class="article-txt">
+                    <div class="wordCloud-box" id="d3_cloud"></div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide itemBlock itemBlock4">
+            <div class="boxH #F5F5F5">
+                <div class="container-box">
 
-		<main class="swiper pageSwiper">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide itemBlock banner-box">
-					<img src="./images/home/banner.png">
-					<div class="content-box">
-						<img src="./images/home/banner-content.png">
-					</div>
-				</div>
-				<div class="swiper-slide itemBlock itemBlock2">
-					
-					<div style="position: relative;width: 100%;height: 100%;">
-						
-						<div class="container-box">
-							<div class="article-img">
-							<img src="./images/home/img1.png" >
-						</div>
-							<h5>ABOUT US</h5>
-							<div class="article-txt">
-								<div>
-									<img src="./images/home/img2.png" />
-									<div>
-										<span>Dr. Jianbo Tang</span>
-										<span>Principle Investigator</span>
-									</div>
-								</div>
-								<p>At the New Phase Metallics and Manufacturing Laboratory (NPMM </p>
-								<p>Lab) we work at the forefront of liquid metals—a family of </p>
-								<p>low-melting-temperature metals and alloys that, despite their long </p>
-								<p>history, have not received substantial attention until recently. We </p>
-								<p>find interest in fundamental questions that drive scientific </p>
-								<p>breakthroughs and inspire engineering innovations. Our liquid </p>
-								<p>metal-focused research is highly interdisciplinary in terms of </p>
-								<p>both the material systems involved and the methodologies </p>
-								<p>employed. In a new phase of making and utilizing metallic </p>
-								<p>materials, we aim to create transformative impact through </p>
-								<p>the ways of liquid metals.</p>
-								<p style="height: 0.12rem;"></p>
-								<p>We are part of the Department of Materials Science and </p>
-								<p>Engineering within the School of Engineering at </p>
-								<p>Westlake University.</p>
-							</div>
-							<div class="btn-box">
-								<a href="openings.html">LEARN MORE</a>
-							</div>
-							<div class="decorative-imageBox">
-								<img class="decorativeImg_1" src="./images/home/decorativeImg_1.png" />
-								<img class="decorativeImg_2" src="./images/home/decorativeImg_2.png" />
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide itemBlock itemBlock3">
-					<div class="container-box">
-						<h6>NPMM</h6>
-						<h5>KEYWORD CLOUD</h5>
-						<div class="article-txt">
-							<div class="wordCloud-box" id="d3_cloud"></div>
-							<div class="wordCloudDetail-box" id="wordCloudList">
-								<div data-type="LICUTD">
-									<p>Eutectic System</p>
-									<p>A type of a homogeneous mixture that has a melting point lower than those of the constituents A type of a homogeneous mixture that has a melting point lower than those of the constituents</p>
-								</div>
-								<div data-type="RESEARCM">
-									<p>Eutectic System Test</p>
-									<p>A type of a homogeneous mixture that has a melting point lower than those of the constituents A type of a homogeneous mixture that has a melting point lower than those of the constituents</p>
-								</div>
-							</div>
-							<div class="clean"></div>
-							<div class="decorative-imageBox">
-								<img class="decorativeImg_3" src="./images/home/decorativeImg_3.png" />
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide itemBlock itemBlock4">
-					<div class="boxH">
-						<div class="container-box">
-							<h5>NEWS & EVENTS</h5>
-							<div class="article-txt">
-								<div class="swiper newsSwiper">
-									<div class="swiper-wrapper">
-										<div class="swiper-slide">
-											<img src="./images/home/img3.png" />
-											<div>
-												<p>Oct 27, 2024 | Engineering Special Seminar</p>
-												<p>Prof Nicola Gaston (The University of Auckland & MacDiarmid institute, NZ)</p>
-												<p>Liguid metals as dynamics systems for atomically precise control... <a href="newsDetail.html">Read more</a></p>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<img src="./images/home/img3.png" />
-											<div>
-												<p>Oct 27, 2024 | Engineering Special Seminar</p>
-												<p>Prof Nicola Gaston (The University of Auckland & MacDiarmid institute, NZ)</p>
-												<p>Liguid metals as dynamics systems for atomically precise control... <a href="newsDetail.html">Read more</a></p>
-											</div>
-										</div>
-									</div>
-									<div class="swiper-button-next"></div>
-									<div class="swiper-button-prev"></div>
-									<div class="swiper-pagination"></div>
-								</div>
-								<ul id="newsList">
-									<li data-slide="0" class="active">
-										<p>Engineering Special Seminar (Date: October 18, 2024)</p>
-										<p>Prof. Nicola Gaston | Liquid Metals as Dynamic Systems for Atomically-Precise Control</p>
-									</li>
-									<li data-slide="1">
-										<p>Engineering Special Seminar (Date: October 18, 2024)</p>
-										<p>Prof. Nicola Gaston | Liquid Metals as Dynamic Systems for Atomically-Precise Control</p>
-									</li>
-									<li>
-										<p>Engineering Special Seminar (Date: October 18, 2024)</p>
-										<p>Prof. Nicola Gaston | Liquid Metals as Dynamic Systems for Atomically-Precise Control</p>
-									</li>
-								</ul>
-								<div class="clean"></div>
-								<div class="btn-box">
-									<a href="news.html">MORE NEWS & EVENTS</a>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-					<footer class="footer-box">
-						<div class="logo-box">
-							<img src="./img/icon_footerLogo_l.png">
-							<img src="./img/icon_footerLogo_r.png">
-						</div>
-						<div class="labInfo-box">
-							<a href="joinus.html">Join us</a>
-							<p><span>Email :</span> jianbotang@westlake.edu.cn</p>
-							<p><span>Lab :</span> E3-101A&B, Yungu Campus, Westlake University</p>
-							<p><span>Address :</span> No. 600 Dunyu Road, XihuDistrict, Hangzhou, Zhejiang, 310030, PR. China</p>
-						</div>
-						<div class="filings-box">
-							<p><a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备18025489号</a></p>
-							<p>浙公安备33010602007514号</p>
-							<p>Copyright © Westlake University. All Rights Reserved</p>
-						</div>
-					</footer>
-				</div>
-			</div>
-		</main>
-		<script>
-			$(function(){
-				setTimeout(function() {
-					sessionStorage.clear();
-				}, 0);
-				function setRem(designSize) {
-					let html = document.documentElement;
-					let width = html.clientWidth;
-					width = width >= 1440 ? 1440 : width;
-			     	html.style.fontSize = width / designSize + 'px'; // 设计稿宽度为1440px，那么1rem=100px，故除以14.4
-				}
-				setRem(14.4);
-				window.onresize = function() {
-					setRem(14.4);
-				};
-				var index=0;
-				if(sessionStorage.getItem("index")){
-					index=sessionStorage.getItem("index");
-				}
-				var pageSwiper = new Swiper(".pageSwiper", {
-					direction: "vertical",
-					mousewheel: true,
-					initialSlide: index,
-					centeredSlides: true
-				});
-				$("a").bind("click",function(){
-					var i= $(".pageSwiper .swiper-slide-active").index();
-					sessionStorage.setItem("index",i);
-				})
+                    <h5>NEWS & EVENTS</h5>
+                    <div class="article-txt">
+                        <div class="swiper newsSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="__local/7/68/53/41ABCC0A9F8017B19D85C58EF3E_395DD624_E65F.jpg">
+                                    <div>
+                                        <p>May 21, 2025 | ACS Nano</p>
+                                        <p>A new way of growing substrate-supported crystals from a liquid metal
+                                            solvent</p>
+                                        <p>Liquid phase deposition is widely employed for growing substrate-supported
+                                            thin films and structures...<a href="info/1156/1219.htm">Read more</a></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="__local/E/A2/8C/57AF1B8DA0BB31AC0CAA95ABC9A_DD3EC5DF_10F3D.jpg">
+                                    <div>
+                                        <p>Apr 04, 2025 | Adv. Funct. Mater.</p>
+                                        <p>Collaborative project on 2D indium oxide with self-embedded Schottky
+                                            junctions for room-temperature hydrogen sensing</p>
+                                        <p>Semiconductor-based hydrogen sensors provide cost-efficient solutions for
+                                            safety and a circular...<a href="info/1156/1220.htm">Read more</a></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="__local/6/AC/6B/339B9AC3FC3D30008D2A630EF59_E083A224_10BBF.jpg">
+                                    <div>
+                                        <p>Mar 12, 2025 | Adv. Funct. Mater.</p>
+                                        <p>Liquid metal solutions for p-type 2D gallium oxide</p>
+                                        <p>The naturally self-limiting oxide formed on the surface of liquid metals can
+                                            be exfoliated and...<a href="info/1156/1221.htm">Read more</a></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="__local/0/9B/80/E0EB83EF61711511BADFEE6464E_F24E9ABD_DAB1.jpg">
+                                    <div>
+                                        <p>Feb 24, 2025 | ACS Nano</p>
+                                        <p>Biosensing with liquid metal-synthesized mesoporous noble metal thin
+                                            films</p>
+                                        <p>Nanoporous thin films of noble metals are known for their exceptional
+                                            durability, biocompatibility...<a href="info/1156/1222.htm">Read more</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="__local/4/A6/17/D16573D26AB018DC578EED072AD_B4314198_1423A.jpg">
+                                    <div>
+                                        <p>Jan 13, 2025 | Engineering Special Seminar</p>
+                                        <p>Bio-inspired nanoionic materials for wearable devices</p>
+                                        <p>Dewei Chu a Full Professor and ARC Mid-career Industry Fellow in the School
+                                            of Materials Science...<a href="info/1156/1204.htm">Read more</a></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="__local/3/EF/73/C6208F59435F7854941A0BE3555_C3594CBF_194D5.jpg">
+                                    <div>
+                                        <p>Jan 06, 2025 | Engineering Special Seminar</p>
+                                        <p>Soft conductive nanocomposites for wearables</p>
+                                        <p>Shuhua Peng is a Senior Lecturer and Australian Research Council (ARC) Future
+                                            Fellow in the School of...<a href="info/1156/1201.htm">Read more</a></p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="__local/C/55/2F/84B6897C80EEFB5423FE5A8FCEE_14055849_1B203.jpg">
+                                    <div>
+                                        <p>Jan 06, 2025 | Engineering Special Seminar</p>
+                                        <p>Polymer Nanocomposites for High-performance Wearable Sensors and Composite
+                                            Structures</p>
+                                        <p>Shuying Wu is a Senior Lecturer in the School of Aerospace, Mechanical and
+                                            Mechatronic Eng...<a href="info/1156/1202.htm">Read more</a></p>
+                                    </div>
+                                </div>
+                                <script>_showDynClickBatch(['dynclicks_u7_1219', 'dynclicks_u7_1220', 'dynclicks_u7_1221', 'dynclicks_u7_1222', 'dynclicks_u7_1204', 'dynclicks_u7_1201', 'dynclicks_u7_1202'], [1219, 1220, 1221, 1222, 1204, 1201, 1202], "wbnews", 2034263579)</script>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <ul id="newsList">
+                            <li data-slide="0" class="active">
+                                <p>ACS Nano (May 21, 2025)</p>
+                                <p>Yuanzhu Mao et al | A new way of growing substrate-supported crystals from a liquid
+                                    metal solvent</p>
+                            </li>
+                            <li data-slide="1" class="active">
+                                <p>Adv. Funct. Mater. (Apr 04, 2025)</p>
+                                <p>Yang Yang et al | Collaborative project on 2D indium oxide with self-embedded
+                                    Schottky junctions for room-temperature hydrogen sensing</p>
+                            </li>
+                            <li data-slide="2" class="active">
+                                <p>Adv. Funct. Mater. (Mar 12, 2025)</p>
+                                <p>Laetitia Bardet et al | Liquid metal solutions for p-type 2D gallium oxide</p>
+                            </li>
+                            <li data-slide="3" class="active">
+                                <p>ACS Nano (Feb 24, 2025)</p>
+                                <p>Lucy Johnston | Biosensing with liquid metal-synthesized mesoporous noble metal thin
+                                    films</p>
+                            </li>
+                            <li data-slide="4" class="active">
+                                <p>Engineering Special Seminar (Jan 13, 2025)</p>
+                                <p>Dewei Chu | Bio-inspired nanoionic materials for wearable devices</p>
+                            </li>
+                            <li data-slide="5" class="active">
+                                <p>Engineering Special Seminar (Jan 06, 2025)</p>
+                                <p>Shuhua Peng | Soft conductive nanocomposites for wearables</p>
+                            </li>
+                            <li data-slide="6" class="active">
+                                <p>Engineering Special Seminar (Jan 06, 2025)</p>
+                                <p>Shuying Wu | Polymer Nanocomposites for High-performance Wearable Sensors and
+                                    Composite Structures</p>
+                            </li>
+                            <script>_showDynClickBatch(['dynclicks_u8_1219', 'dynclicks_u8_1220', 'dynclicks_u8_1221', 'dynclicks_u8_1222', 'dynclicks_u8_1204', 'dynclicks_u8_1201', 'dynclicks_u8_1202'], [1219, 1220, 1221, 1222, 1204, 1201, 1202], "wbnews", 2034263579)</script>
+                        </ul>
+                        <div class="clean"></div>
+                        <div class="btn-box">
+                            <a href="News.html" target="">MORE NEWS & EVENTS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer-box">
+                <div class="logo-box"><img src="images/home/yejiaoxihulogo.png">
 
-				var newsSwiper = new Swiper(".newsSwiper", {
-					autoplay: {
-						delay: 2500,
-						disableOnInteraction: false
-					},
-					direction: "horizontal",
-					navigation: {
-						nextEl: ".swiper-button-next",
-						prevEl: ".swiper-button-prev"
-					},
-					pagination: {
-						el: ".swiper-pagination",
-						clickable: true
-					}
-				});
-				newsSwiper.on('slideChange', function () {
-					var activeIndex = newsSwiper.activeIndex;
-					setNewsItemActive(activeIndex);
-				});
-				var newsItems = document.querySelectorAll('#newsList>li');
-				newsItems.forEach(function(item) {
-					item.addEventListener('click', function() {
-						var index = this.getAttribute('data-slide');
-						newsSwiper.slideTo(index);
-					});
-				});
-				function setNewsItemActive (index) {
-					newsItems.forEach(function(item) {
-						item.classList.remove('active')
-						if (index == item.getAttribute('data-slide')) {
-							item.classList.add('active')
-						}
-					});
-				}
-				var words_list = [
-					{text:"LIQUTD"},
-					{text:"RESEARCM"},
-					{text:"TANG"},
-					{text:"METALS"},
-					{text:"SCIENCE"},
-					{text:"FESE"},
-					{text:"WERSITT"},
-					{text:"2024"},
-					{text:"UNIVERSITY"}
-				];
-				var layout = d3.layout.cloud()
-					.size([560, 380])
-					.words(words_list)
-					.padding(5)
-					.rotate(function() { return ~~(Math.random() * 2) * 0; })
-					.font("Impact")
-					.fontSize(function(d, i) { 
-						let size = 30;
-						switch (i) {
-							case 0:
-								size = 100;
-								break;
-							case 1:
-								size = 70;
-								break;
-							case 2:
-							case 3:	
-								size = 50;
-								break;	
-							default:
-								size = 30;
-						}
-						return size;
-					})
-					.on("end", draw);
-				function draw(words) {
-					d3.select("#d3_cloud").append("svg")
-						.attr("width", layout.size()[0])
-						.attr("height", layout.size()[1])
-						.append("g")
-						.attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
-						.selectAll("text")
-						.data(words)
-						.enter().append("text")
-						// .style("font-size", function(d) { return d.size + "px"; })
-						.style("font-size", function(d, i) { 
-							let size = 30;
-							switch (i) {
-								case 0:
-									size = 100;
-									break;
-								case 1:
-									size = 70;
-									break;
-								case 2:
-								case 3:	
-									size = 50;
-									break;	
-								default:
-									size = 30;
-							}
-							return size + "px";
-						})
+                    <img src="images/homepagelogo_white.png">
 
-						.style("font-family", "Impact")
-						// .style("fill", function(d, i) { return words_list[i].color || '#999' ; })
-						.style("fill", function(d, i) {
-							let color = '';
-							switch (i) {
-								case 0:
-									color = "#2A5F9A";
-									break;
-								case 1:
-									color = "#7A7A7A";
-									break;
-								case 2:
-								case 3:	
-									color = "#766569";
-									break;	
-								default:
-									color = "#A8AFB2";
-							}
-							return color;
-						})
-						.attr("text-anchor", "middle")
-						.attr("transform", function(d) {
-							return "translate(" + [d.x-2, d.y] + ")rotate(" + d.rotate + ")";
-						})
-						.attr("cursor", "pointer")
-						.text(function(d) { return d.text; })
-						.on("click", function(event, d) {
-							$('#wordCloudList>div').each(function() {
-								let newsType = $(this).data('type');
-								$(this).addClass('hide');
-								if (`${event.text}` == newsType) {
-									$(this).removeClass('hide');
-								}
-							});
-						});
-				}
-				layout.start();
-				$('#wordCloudList>div').each(function(i) {
-					$(this).addClass('hide');
-					if (i == 0) {
-						$(this).removeClass('hide');
-					}
-				})
-			})	
-		</script>
-	</body>
+                </div>
+                <div class="labInfo-box">
+                    <p><a href="Openings.html" target="_self">Join Us</a></p>
+                    <p><span>Email :</span> jianbotang@westlake.edu.cn</p>
+                    <p><span>Lab :</span> E3-101A&B, Yungu Campus, Westlake University</p>
+                    <p><span>Address :</span> No. 600 Dunyu Road, Xihu District, Hangzhou, Zhejiang, 310030, P.R. China
+                    </p></div>
+                <div class="filings-box"><!-- 版权内容请在本组件"内容配置-版权"处填写 -->
+                    <p><a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备18025489号</a></p>
+                    <p>浙公安备33010602007514号</p>
+                    <p>Copyright © Westlake University. All Rights Reserved</p></div>
+            </footer>
+        </div>
+    </div>
+</main>
+<script>
+    $(function () {
+        setTimeout(function () {
+            sessionStorage.clear();
+        }, 0);
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        if (isMobile) {
+            $('.itemBlock2 .container-box').css('scale', '0.45')
+            $('.itemBlock2 .container-box h5').css('margin-top', '-0.7rem')
+            $('.itemBlock2 .shapeBox').css('margin-top', '-4.5rem')
+            $('.itemBlock2 .shapeBox').css('scale', '1')
+            $('.itemBlock3 .container-box').css('scale', '0.5')
+            $('#d3_cloud svg').css('scale', '0.8')
+            $('.itemBlock4 .container-box').css('scale', '0.5')
+        }
+        var index = 0;
+        if (sessionStorage.getItem("index")) {
+            index = sessionStorage.getItem("index");
+        }
+        var pageSwiper = new Swiper(".pageSwiper", {
+            speed: 1000,
+            direction: "vertical",
+            mousewheel: true,
+            forceToAxis: true,
+            initialSlide: index,
+            centeredSlides: true
+        });
+        $(".btn-box>a").bind("click", function () {
+            var i = $(".pageSwiper .swiper-slide-active").index();
+            sessionStorage.setItem("index", i);
+        })
+        var bannerSwiper = new Swiper(".bannerSwiper", {
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false
+            },
+            direction: "horizontal",
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            }
+        });
+
+        var newsSwiper = new Swiper(".newsSwiper", {
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false
+            },
+            direction: "horizontal",
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            }
+        });
+        newsSwiper.on('slideChange', function () {
+            var activeIndex = newsSwiper.activeIndex;
+            setNewsItemActive(activeIndex);
+        });
+        var newsItems = document.querySelectorAll('#newsList>li');
+        newsItems.forEach(function (item) {
+            item.addEventListener('click', function () {
+                var index = this.getAttribute('data-slide');
+                newsSwiper.slideTo(index);
+            });
+        });
+
+        function setNewsItemActive(index) {
+            newsItems.forEach(function (item) {
+                item.classList.remove('active')
+                if (index == item.getAttribute('data-slide')) {
+                    item.classList.add('active')
+                }
+            });
+        }
+
+        var words_list = [];
+        $('#wordCloudList>div').each(function () {
+            words_list.push({
+                text: $(this).data('type')
+            })
+        })
+        var layout = d3.layout.cloud()
+            .size([720, 515])
+            .words(words_list)
+            .padding(2)
+            .rotate(function () {
+                return ~~(Math.random() * 2) * 0;
+            })
+            .font("Impact")
+            .spiral('archimedean')
+            .fontSize(function (d, i) {
+                let size = 12;
+                if (i <= 5) {
+                    size = 35
+                } else if (i > 5 && i <= 15) {
+                    size = 25
+                } else if (i > 15 && i <= 25) {
+                    size = 15
+                }
+                return size;
+            })
+            .on("end", draw);
+
+        function draw(words) {
+            d3.select("#d3_cloud").append("svg")
+                .attr("width", layout.size()[0])
+                .attr("height", layout.size()[1])
+                .append("g")
+                .attr("transform", "translate(" + (layout.size()[0] / 2 + 20) + "," + (layout.size()[1] / 2 + 10) + ")")
+                .selectAll("text")
+                .data(words)
+                .enter().append("text")
+                // .style("font-size", function(d) { return d.size + "px"; })
+                .style("font-size", function (d, i) {
+                    let size = 0.12;
+                    if (i <= 5) {
+                        size = 0.35
+                    } else if (i > 5 && i <= 15) {
+                        size = 0.25
+                    } else if (i > 15 && i <= 25) {
+                        size = 0.15
+                    }
+                    return size + "rem";
+                })
+                .style("font-family", "Impact")
+                // .style("fill", function(d, i) { return words_list[i].color || '#999' ; })
+                .style("fill", function (d, i) {
+                    let color = '#A8AFB2';
+                    if (i <= 5) {
+                        color = "#2A5F9A";
+                    } else if (i > 5 && i <= 15) {
+                        color = "#7A7A7A";
+                    } else if (i > 15 && i <= 25) {
+                        color = "#766569";
+                    }
+                    return color;
+                })
+                .attr("text-anchor", "middle")
+                .attr("transform", function (d) {
+                    return "translate(" + [d.x - 2, d.y] + ")rotate(" + d.rotate + ")";
+                })
+                .attr("cursor", "pointer")
+                .text(function (d) {
+                    return d.text;
+                })
+                .on("click", function (event, d) {
+                    $('#wordCloudList>div').each(function () {
+                        let newsType = $(this).data('type');
+                        $(this).addClass('hide');
+                        if (`${event.text}` == newsType) {
+                            $('.title-box').addClass('hide');
+                            $(this).removeClass('hide');
+                        }
+                    });
+                });
+        }
+
+        layout.start();
+        $('#wordCloudList>div').each(function (i) {
+            $(this).addClass('hide');
+        })
+    })
+</script>
+<script src="js/setLanguage.js"></script>
+</body>
 </html>

@@ -8,9 +8,6 @@ img {
     object-fit: cover;
     font-family: "object-fit: cover";
 }
-::-webkit-scrollbar {
-	width: 0;
-}
 .clean {
 	clear: both !important;
 }
@@ -42,8 +39,9 @@ img {
     src: url('../font/Avenir-HeavyOblique.ttf') format('truetype');
 }
 
-
-
+#pc-menu2 {
+display:none
+}
 /* header */
 .header-box {
 	width: 100%;
@@ -69,16 +67,15 @@ img {
 	margin-right: .32rem;
 	cursor: pointer;
 }
-.header-box .logo-box a:nth-child(2) {
+.header-box .logo-box a:last-child {
 	margin-right: 0;
 }
 .header-box .logo-box img {
-	width: 1.68rem;
 	height: .4rem;
 	display: block;
 	object-fit: cover;
 }
-.header-box .logo-box a:nth-child(2) img {
+.header-box .logo-box a:last-child img {
 	width: 1.98rem;
 	height: .36rem;
 	margin-right: 0;
@@ -94,12 +91,15 @@ img {
 .header-box .menu-box ul {
 	height: 100%;
 	display: flex;
+    margin-left: .36rem;
+padding-top: .2rem;
+    box-sizing: border-box;
 }
 .header-box .menu-box ul li {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-  	margin-right: .36rem;
+  	margin-right: .32rem;
 	cursor: pointer;
 	position: relative;
 }
@@ -109,10 +109,9 @@ img {
 .header-box .menu-box ul li a {
 	color: rgba(0, 0, 0, .85);
   	text-decoration: none;
-  	font-family: Avenir-Medium;
-	font-weight: 500;
-  	font-size: .18rem;
-	line-height: .25rem;
+  	font-family: Avenir-Heavy;
+	font-weight: 800;
+  	font-size: .16rem;
 }
 .header-box .menu-box li a:hover {
 	color: rgba(0, 0, 0, .65);
@@ -169,6 +168,29 @@ img {
 .header-box .menu-box .childList li a:hover {
 	color: #F28D00
 }
+.header-box .language-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: .24rem;
+    margin-top: .2rem;
+	height: .32rem;
+	cursor: pointer;
+display: none;
+}
+.header-box .language-box img {
+	width: .2rem;
+	height: .2rem;
+	display: block;
+}
+.header-box .language-box span {
+	margin-left: .06rem;
+	font-family: Avenir-Medium;
+	font-weight: 500;
+	font-size: .16rem;
+	color: rgba(0, 0, 0, .65);
+	padding-top: .04rem;
+}
 
 
 
@@ -176,8 +198,8 @@ img {
 /* footer */
 .footer-box {
 	width: 100%;
-	height: 1.48rem;
-	padding: 0 .4rem;
+	height: 1.16rem;
+	padding: 0 .6rem;
 	background-color: #08214D;
 	box-sizing: border-box;
 	display: flex;
@@ -185,24 +207,26 @@ img {
 	justify-content: space-between;
 }
 .footer-box .logo-box {
-	width: 4rem;
+	/* width: 5.5rem;*/
 	display: flex;
 	justify-content: space-between;
 }
 .footer-box .logo-box img {
-	width: 1.84rem;
-	height: .58rem;
+	/* width: 1.46rem; */
+	height: .4rem;
 	display: block;
 }
 .footer-box .logo-box img:nth-child(2) {
-	width: 1.93rem;
+	/*width: 2.69rem;*/
+	margin-left: .15rem;
 }
 .footer-box .labInfo-box {
-	width: 5.7rem;
+	width: fit-content;
+    margin-left: .15rem;
 }
 .footer-box .labInfo-box p {
-	font-size: .15rem;
-	line-height: .2rem;
+	font-size: .12rem;
+	line-height: .18rem;
 	font-family: Avenir-Roman;
 	color: #FFFFFF;
 	margin-top: .04rem;
@@ -215,14 +239,14 @@ img {
 	font-weight: 500;
 }
 .footer-box .labInfo-box a {
-	width: 1.13rem;
-    height: .34rem;
-	line-height: .36rem;
+	width: .86rem;
+    height: .3rem;
+	line-height: .32rem;
     display: block;
     text-align: center;
     border-radius: calc(infinity * 0.01rem);
     background-color: #fff;
-    font-size: .16rem;
+    font-size: .14rem;
     font-family: Avenir-Heavy;
 	font-weight: 800;
     text-decoration: none;
@@ -230,11 +254,12 @@ img {
 	float: right;
 }
 .footer-box .filings-box {
-	width: 2.97rem;
+	/* width: 2.97rem; */
+    margin-left: .15rem;
 }
 .footer-box .filings-box p {
 	margin-top: .06rem;
-	font-size: .12rem;
+	font-size: .11rem;
     font-family: Avenir-Medium;
 	font-weight: 500;
 	color: rgba(255, 255, 255, .4);
@@ -255,6 +280,10 @@ img {
 	position: relative;
 	margin-top: .72rem;
 }
+.bannerSwiper{
+	width: 100%;
+    height: 100%;
+}
 .banner-box img {
 	width: 100%;
 	height: 100%;
@@ -270,7 +299,6 @@ img {
 	position: absolute;
 	left: 0;
 	top: 0;
-	background: rgba(0, 0, 0, .4)
 }
 .banner-box .banner-content .txt-box {
 	width: 100%;

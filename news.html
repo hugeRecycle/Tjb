@@ -1,238 +1,321 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport" />
-		<title>News</title>
-		<link rel="shortcut icon" href="./favicon.ico">
-		<link rel="stylesheet" type="text/css" href="./css/common.css" />
-		<link rel="stylesheet" type="text/css" href="./css/news.css" />
-		<link rel="stylesheet" type="text/css" href="./css/swiper-bundle.min.css">
-		<script src="./js/jquery-2.1.4.min.js"></script>
-		<script src="./js/swiper-bundle.min.js"></script>
-	</head>
-	<body>
-		<header class="header-box">
-			<div class="logo-box">
-                <a>
-                    <img src="./img/icon_headerLogo_l.png" title="西湖大学" />
-                </a>
-				<a href="https://www.westlake.edu.cn/" target="_blank">
-                    <img src="./img/icon_headerLogo_r.png" title="西湖大学" />
-                </a>
-            </div>
-			<nav class="menu-box">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="news.html">News</a></li>
-					<li><a href="research.html">Research<img src="./img/icon_arrowDown.png" /></a>
-						<ul class="childList">
-							<li><a href="researchTheme.html">Research Theme 1</a></li>
-							<li><a>Research Theme 2</a></li>
-						</ul>
-					</li>
-					<li><a href="gallery.html">Gallery<img src="./img/icon_arrowDown.png" /></a>
-						<ul class="childList">
-							<li><a href="galleryCategory.html">Gallery category 1</a></li>
-							<li><a>Gallery category 2</a></li>
-						</ul>
-					</li>
-					<li><a href="publications.html">Publications</a></li>
-					<li><a href="team.html">Team</a></li>
-					<li><a href="openings.html">Openings</a></li>
-				</ul>
-			</nav>
-		</header>
-		<section class="banner-box">
-			<div class="swiper bannerSwiper">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<img src="./images/publications/banner.png" />
-					</div>
-					<div class="swiper-slide">
-						<img src="./images/publications/banner.png" />
-					</div>
-				</div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-pagination"></div>
-			</div>
-		</section>
-		<main>
-			<div class="itemBlock">
-				<div class="container-box">
-					<h5>GROUP NEWS</h5>
-					<ul id="tab-box"></ul>
-                    <ul id="news-list">
-						<li data-type="2023" onclick="openPage('./newsDetail.html')">
-							<img src="./images/news/img_1.png" >
-							<div class="txt">
-								<div class="mask">
-									<div>Event</div>
-								</div>
-								<p>Oct 27, 2024</p>
-								<p>Engineering Special Seminar</p>
-								<p>Nicola Gaston: Liquid Metals as Dynamic Systems for Atomically-Precise Control...</p>
-								<p>Continue Reading</p>
-							</div>
-						</li>
-						<li data-type="2023">
-							<img src="./images/news/img_1.png" >
-							<div class="txt">
-								<div class="mask">
-									<div>Event</div>
-								</div>
-								<p>Oct 27, 2024</p>
-								<p>Engineering Special Seminar</p>
-								<p>Nicola Gaston: Liquid Metals as Dynamic Systems for Atomically-Precise Control...</p>
-								<p>Continue Reading</p>
-							</div>
-						</li>
-						<li data-type="2023">
-							<img src="./images/news/img_1.png" >
-							<div class="txt">
-								<div class="mask">
-									<div>Event</div>
-								</div>
-								<p>Oct 27, 2024</p>
-								<p>Engineering Special Seminar</p>
-								<p>Nicola Gaston: Liquid Metals as Dynamic Systems for Atomically-Precise Control...</p>
-								<p>Continue Reading</p>
-							</div>
-						</li>
-						<li data-type="2024">
-							<img src="./images/news/img_1.png" >
-							<div class="txt">
-								<div class="mask">
-									<div>Event</div>
-								</div>
-								<p>Oct 27, 2024</p>
-								<p>Engineering Special Seminar</p>
-								<p>Nicola Gaston: Liquid Metals as Dynamic Systems for Atomically-Precise Control...</p>
-								<p>Continue Reading</p>
-							</div>
-						</li>
-						<li data-type="2024">
-							<img src="./images/news/img_1.png" >
-							<div class="txt">
-								<div class="mask">
-									<div>Event</div>
-								</div>
-								<p>Oct 27, 2024</p>
-								<p>Engineering Special Seminar</p>
-								<p>Nicola Gaston: Liquid Metals as Dynamic Systems for Atomically-Precise Control...</p>
-								<p>Continue Reading</p>
-							</div>
-						</li>
-						<li data-type="2023">
-							<img src="./images/news/img_1.png" >
-							<div class="txt">
-								<div class="mask">
-									<div>Event</div>
-								</div>
-								<p>Oct 27, 2024</p>
-								<p>Engineering Special Seminar</p>
-								<p>Nicola Gaston: Liquid Metals as Dynamic Systems for Atomically-Precise Control...</p>
-								<p>Continue Reading</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</main>
-		<footer class="footer-box">
-			<div class="logo-box">
-				<img src="./img/icon_footerLogo_l.png">
-				<img src="./img/icon_footerLogo_r.png">
-			</div>
-			<div class="labInfo-box">
-				<a href="joinus.html">Join us</a>
-				<p><span>Email :</span> jianbotang@westlake.edu.cn</p>
-				<p><span>Lab :</span> E3-101A&B, Yungu Campus, Westlake University</p>
-				<p><span>Address :</span> No. 600 Dunyu Road, XihuDistrict, Hangzhou, Zhejiang, 310030, PR. China</p>
-			</div>
-			<div class="filings-box">
-				<p><a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备18025489号</a></p>
-				<p>浙公安备33010602007514号</p>
-				<p>Copyright © Westlake University. All Rights Reserved</p>
-			</div>
-		</footer>
-		<script>
-			$(function(){
-				function setRem(designSize) {
-					let html = document.documentElement;
-					let width = html.clientWidth;
-					width = width >= 1440 ? 1440 : width;
-			     	html.style.fontSize = width / designSize + 'px'; // 设计稿宽度为1440px，那么1rem=100px，故除以14.4
-				}
-				setRem(14.4);
-				window.onresize = function() {
-					setRem(14.4);
-				};
-				var bannerSwiper = new Swiper(".bannerSwiper", {
-					autoplay: {
-						delay: 4000,
-						disableOnInteraction: false
-					},
-					direction: "horizontal",
-					navigation: {
-						nextEl: ".swiper-button-next",
-						prevEl: ".swiper-button-prev"
-					},
-					pagination: {
-						el: ".swiper-pagination",
-						clickable: true
-					}
-				});
-				let arr = ['ALL'];
-				$('#news-list>li').each(function() {
-					let listType = $(this).data('type')+'';
-					if (listType.length > 0) {
-						arr.push(listType);
-					}
-				});
-				let uniqueArr = Array.from(new Set(arr));
-				let ul = document.getElementById('tab-box');
-				uniqueArr.forEach((item, index) => {
-					let li = document.createElement('li');
-					li.textContent = item;
-					li.setAttribute("data-type", item)
-					if (index == 0) {
-						li.classList.add('active')
-					}
-					ul.appendChild(li);
-				})
-				let selectedType;
-				$('#tab-box>li').click(function() {
-					let curSelectedType = $(this).data('type');
-					$('#tab-box>li').each(function() {
-						$(this).removeClass('active');
-					})
-					if (curSelectedType == selectedType) {
-						return
-					} else {
-						$(this).addClass('active');
-					}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport">
+    <title>News - Tang Research Group</title>
+    <meta name="keywords" content="Tang Research Group">
 
-					selectedType = curSelectedType;
-					$('#news-list>li').each(function() {
-						let listType = $(this).data('type');
-						$(this).addClass('hide');
-						if (curSelectedType == 'ALL') {
-							$(this).removeClass('hide');
-						} else {
-							if (curSelectedType == listType) {
-								$(this).removeClass('hide');
-							}
-						}	
-					});
-				})	
-			})
-			function openPage(url, target) {
-				if (url) {
-					window.open(url, target || '_self')
-				}
-			}
-		</script>
-	</body>
-</html>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/news.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/setRem.js"></script>
+</head>
+<body>
+<header class="header-box">
+    <div class="logo-box">
+        <a>
+            <img src="images/home/homepagelogo_dark_gray.png" alt="">
+        </a>
+        <a href="https://www.westlake.edu.cn/" target="_blank">
+            <img src="img/icon_headerLogo_r.png" alt="">
+        </a>
+    </div>
+    <nav class="menu-box">
+        <ul id="pc-menu1">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li class="active">
+                <a href="News.html">News</a>
+            </li>
+            <li>
+                <a href="Research.html">Research</a>
+            </li>
+            <li>
+                <a href="Gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a href="Publications.html">Publications</a>
+            </li>
+            <li>
+                <a href="Team.html">Team</a>
+            </li>
+            <li>
+                <a href="Openings.html">Openings</a>
+            </li>
+        </ul>
+        <ul id="pc-menu2">
+            <li>
+                <a href="zh/sy.htm">首页</a>
+            </li>
+            <li>
+                <a href="zh/xw.htm">新闻</a>
+            </li>
+            <li>
+                <a href="zh/yjnr.htm">研究内容</a>
+            </li>
+            <li>
+                <a href="zh/hl.htm">画廊</a>
+            </li>
+            <li>
+                <a href="zh/xscg.htm">学术成果</a>
+            </li>
+            <li>
+                <a href="zh/td.htm">团队</a>
+            </li>
+            <li>
+                <a href="zh/zp.htm">招聘</a>
+            </li>
+        </ul>
+        <script type="text/javascript">
+            var isZh = location.href.includes("zh");
+            if (!isZh) {
+                document.getElementById('pc-menu1').style.display = "flex";
+                document.getElementById('pc-menu2').style.display = "none";
+            } else {
+                document.getElementById('pc-menu1').style.display = "none";
+                document.getElementById('pc-menu2').style.display = "flex";
+            }
+        </script>
+    </nav>
+    <div class="language-box" id="langBtn">
+        <img src="img/icon_language.png" alt="">
+        <span>CN</span>
+    </div>
+</header>
+<section class="banner-box">
+    <div class="swiper bannerSwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/News_Events_banner_01.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+<main>
+    <div class="itemBlock">
+        <div class="container-box">
+            <ul id="tab-box"></ul>
+            <ul id="news-list">
+
+
+                <li data-type="2025" onclick="openPage('info/1156/1219.htm')">
+                    <img src="__local/7/68/53/41ABCC0A9F8017B19D85C58EF3E_395DD624_E65F.jpg">
+                    <div class="txt">
+                        <div class="mask">
+                            <div>Publication</div>
+                        </div>
+                        <p>May 21, 2025</p>
+                        <p>Yuanzhu Mao et al | A new way of growing substrate-supported crystals from a liquid metal
+                            solvent</p>
+                        <p>Liquid phase deposition is widely employed for growing substrate-supported thin films and
+                            structures...</p>
+                        <p>Continue Reading</p>
+                    </div>
+                </li>
+                <li data-type="2025" onclick="openPage('info/1156/1219.htm')">
+                    <img src="__local/E/A2/8C/57AF1B8DA0BB31AC0CAA95ABC9A_DD3EC5DF_10F3D.jpg">
+                    <div class="txt">
+                        <div class="mask">
+                            <div>Publication</div>
+                        </div>
+                        <p>Apr 04, 2025</p>
+                        <p>Yang Yang et al | Collaborative project on 2D indium oxide with self-embedded Schottky
+                            junctions for room-temperature hydrogen sensing</p>
+                        <p>Semiconductor-based hydrogen sensors provide cost-efficient solutions for safety and a
+                            circular...</p>
+                        <p>Continue Reading</p>
+                    </div>
+                </li>
+                <li data-type="2025" onclick="openPage('info/1156/1219.htm')">
+                    <img src="__local/6/AC/6B/339B9AC3FC3D30008D2A630EF59_E083A224_10BBF.jpg">
+                    <div class="txt">
+                        <div class="mask">
+                            <div>Publication</div>
+                        </div>
+                        <p>Mar 12, 2025</p>
+                        <p>Laetitia Bardet et al | Liquid metal solutions for p-type 2D gallium oxide</p>
+                        <p>The naturally self-limiting oxide formed on the surface of liquid metals can be exfoliated
+                            and...</p>
+                        <p>Continue Reading</p>
+                    </div>
+                </li>
+                <li data-type="2025" onclick="openPage('info/1156/1219.htm')">
+                    <img src="__local/0/9B/80/E0EB83EF61711511BADFEE6464E_F24E9ABD_DAB1.jpg">
+                    <div class="txt">
+                        <div class="mask">
+                            <div>Publication</div>
+                        </div>
+                        <p>Feb 24, 2025</p>
+                        <p>Lucy Johnston | Biosensing with liquid metal-synthesized mesoporous noble metal thin
+                            films</p>
+                        <p>Nanoporous thin films of noble metals are known for their exceptional durability,
+                            biocompatibility...</p>
+                        <p>Continue Reading</p>
+                    </div>
+                </li>
+                <li data-type="2025" onclick="openPage('info/1156/1219.htm')">
+                    <img src="__local/4/A6/17/D16573D26AB018DC578EED072AD_B4314198_1423A.jpg">
+                    <div class="txt">
+                        <div class="mask">
+                            <div>Event</div>
+                        </div>
+                        <p>Jan 13, 2025</p>
+                        <p>Dewei Chu | Bio-inspired nanoionic materials for wearable devices</p>
+                        <p>Dewei Chu a Full Professor and ARC Mid-career Industry Fellow in the School of Materials
+                            Science...</p>
+                        <p>Continue Reading</p>
+                    </div>
+                </li>
+                <li data-type="2025" onclick="openPage('info/1156/1219.htm')">
+                    <img src="__local/3/EF/73/C6208F59435F7854941A0BE3555_C3594CBF_194D5.jpg">
+                    <div class="txt">
+                        <div class="mask">
+                            <div>Event</div>
+                        </div>
+                        <p>Jan 06, 2025</p>
+                        <p>Shuhua Peng | Soft conductive nanocomposites for wearables</p>
+                        <p>Shuhua Peng is a Senior Lecturer and Australian Research Council (ARC) Future Fellow in the
+                            School of...</p>
+                        <p>Continue Reading</p>
+                    </div>
+                </li>
+                <li data-type="2025" onclick="openPage('info/1156/1219.htm')">
+                    <img src="__local/C/55/2F/84B6897C80EEFB5423FE5A8FCEE_14055849_1B203.jpg">
+                    <div class="txt">
+                        <div class="mask">
+                            <div>Event</div>
+                        </div>
+                        <p>Jan 06, 2025</p>
+                        <p>Shuying Wu | Polymer Nanocomposites for High-performance Wearable Sensors and Composite
+                            Structures</p>
+                        <p>Shuying Wu is a Senior Lecturer in the School of Aerospace, Mechanical and Mechatronic
+                            Eng...</p>
+                        <p>Continue Reading</p>
+                    </div>
+                </li>
+                <li data-type="2025" onclick="openPage('info/1156/1219.htm')">
+                    <img src="__local/4/FD/93/96EEC75574282766701C556C058_94A64983_1E417.jpg">
+                    <div class="txt">
+                        <div class="mask">
+                            <div>Event</div>
+                        </div>
+                        <p>Jan 06, 2025</p>
+                        <p>Junma Tang | Dynamic catalysis of liquid metal</p>
+                        <p>Junma Tang is a Professor at the School of Chemistry, Xi'an Jiaotong University and a
+                            recipient of...</p>
+                        <p>Continue Reading</p>
+                    </div>
+                </li>
+                <li data-type="2024" onclick="openPage('info/1156/1219.htm')">
+                    <img src="__local/C/31/83/740C919C4E2EEFADF9B199DFC4D_1214D638_1366B.jpg">
+                    <div class="txt">
+                        <div class="mask">
+                            <div>Event</div>
+                        </div>
+                        <p>Oct 18, 2024</p>
+                        <p>Nicola Gaston | Liquid metals as dynamic systems for atomically-precise control</p>
+                        <p>Nicola Gaston is a Professor at the University of Auckland and Co-Director of MacDiarmid
+                            Institute for...</p>
+                        <p>Continue Reading</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
+<footer class="footer-box">
+    <div class="logo-box"><img src="images/home/yejiaoxihulogo.png">
+
+        <img src="images/homepagelogo_white.png">
+
+    </div>
+    <div class="labInfo-box">
+        <p><a href="Openings.htm" target="_self">Join Us</a></p>
+        <p><span>Email :</span> jianbotang@westlake.edu.cn</p>
+        <p><span>Lab :</span> E3-101A&B, Yungu Campus, Westlake University</p>
+        <p><span>Address :</span> No. 600 Dunyu Road, Xihu District, Hangzhou, Zhejiang, 310030, P.R. China</p></div>
+    <div class="filings-box"><!-- 版权内容请在本组件"内容配置-版权"处填写 -->
+        <p><a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备18025489号</a></p>
+        <p>浙公安备33010602007514号</p>
+        <p>Copyright © Westlake University. All Rights Reserved</p></div>
+</footer>
+<script>
+    $(function () {
+
+        var bannerSwiper = new Swiper(".bannerSwiper", {
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false
+            },
+            direction: "horizontal",
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            }
+        });
+        let arr = ['ALL'];
+        $('#news-list>li').each(function () {
+            let listType = $(this).data('type') + '';
+            if (listType.length > 0) {
+                arr.push(listType);
+            }
+        });
+        let uniqueArr = Array.from(new Set(arr));
+        let ul = document.getElementById('tab-box');
+        uniqueArr.forEach((item, index) => {
+            let li = document.createElement('li');
+            li.textContent = item;
+            li.setAttribute("data-type", item)
+            if (index == 0) {
+                li.classList.add('active')
+            }
+            ul.appendChild(li);
+        })
+        let selectedType;
+        $('#tab-box>li').click(function () {
+            let curSelectedType = $(this).data('type');
+            $('#tab-box>li').each(function () {
+                $(this).removeClass('active');
+            })
+            if (curSelectedType == selectedType) {
+                return
+            } else {
+                $(this).addClass('active');
+            }
+
+            selectedType = curSelectedType;
+            $('#news-list>li').each(function () {
+                let listType = $(this).data('type');
+                $(this).addClass('hide');
+                if (curSelectedType == 'ALL') {
+                    $(this).removeClass('hide');
+                } else {
+                    if (curSelectedType == listType) {
+                        $(this).removeClass('hide');
+                    }
+                }
+            });
+        })
+    })
+
+    function openPage(url, target) {
+        if (url) {
+            window.open(url, target || '_self')
+        }
+    }
+</script>
+<script src="js/setLanguage.js"></script>
+</body>
+</html>        

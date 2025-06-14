@@ -1,3 +1,6 @@
+.bannerSwiper {
+    height: 100%;
+}
 .bannerSwiper .swiper-slide {
 	position: relative;
 }
@@ -81,14 +84,6 @@
 .itemBlock:first-child .container-box {
 	padding-top: .72rem;
 }
-.itemBlock h5 {
-	font-size: .28rem;
-	color: #0C3375;
-	font-family: Avenir-Medium;
-	font-weight: 500;
-	line-height: .38rem;
-    text-align: center;
-}
 .itemBlock img {
 	display: block;
 }
@@ -97,16 +92,15 @@
 	background-color: #F5F5F5;
 	border: .01rem solid rgba(0, 0, 0, .1);
 	border-radius: .02rem;
-	margin-top: .56rem;
+	margin-top: .18rem;
+display:flex;
 }
 .itemBlock .info-box img {
 	width: 2.2rem;
 	height: 100%;
 	margin-right: .2rem;
-	float: left;
 }
 .itemBlock .info-box .txt-box {
-	float: right;
 	width: calc(100% - 2.4rem);
 }
 .itemBlock .info-box .txt-box h6 {
@@ -130,13 +124,6 @@
 	display: flex;
     align-items: center;
     justify-content: center;
-}
-.itemBlock .info-box .txt-box p>span {
-	font-size: .15rem;
-	color: #1A5BBD;
-	font-family: Avenir-MediumOblique;
-	line-height: .2rem;
-	display: block;
 }
 .itemBlock .info-box .txt-box p {
 	font-size: .15rem;
@@ -163,6 +150,9 @@
 	border: .01rem solid rgba(0, 0, 0, .1);
 	border-radius: .02rem;
 	box-sizing: border-box;
+}
+.itemBlock ul li:nth-child(-n+4) {
+	margin-top: .18rem;
 }
 .itemBlock ul li:nth-child(4n) {
 	margin-right: 0;

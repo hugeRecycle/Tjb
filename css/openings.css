@@ -1,36 +1,44 @@
-.banner-box .banner-content .txt-box p:nth-last-child(2) {
-    font-size: .18rem;
-    color: rgba(255, 255, 255, .45);
-	margin-top: .16rem;
-    line-height: .22rem;
+.footer-box {
+	position: fixed;
+	bottom: 0;
+	z-index: 1;
+}
+.banner-box {
+	height: 2.2rem;
+}
+.banner-box .banner-content {
+	align-items: center;
+	justify-content: left;
+}
+.banner-box .banner-content .txt-box {
+	width: 13.15rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0;
+	padding-left: .6rem;
+}
+.banner-box .banner-content .txt-box p {
+    color: #FFFFFF;
+	width: 13.1rem;
+    /* word-break: break-all; */
 }
 .banner-box .banner-content .txt-box p:last-child {
-    color: #FFFFFF;
-    font-family: Avenir-Medium;
-	font-weight: 500;
-    margin-top: .04rem;
+	margin-top: .08rem;
+}
+.itemBlock {
+	padding-bottom: 1.16rem;
 }
 .itemBlock .container-box {
 	max-width: 14.4rem;
 	margin: 0 auto;
 	padding: .72rem 1.2rem;
-}
-.itemBlock h5 {
-	font-size: .28rem;
-	color: #0C3375;
-	font-family: Avenir-Medium;
-	font-weight: 500;
-	line-height: .38rem;
-    text-align: center;
-    margin-bottom: .56rem;
-}
-.itemBlock .container-box>div {
-    display: flex;
+	display: flex;
     justify-content: center;
 }
 .itemBlock .container-box .item {
 	width: 3.2rem;
-    height: 4.2rem;
+    height: 3.8rem;
 	margin-right: .72rem;
 	position: relative;
 	cursor: pointer;
@@ -52,6 +60,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
     background-color: rgba(0, 0, 0, .4);
 	font-size: .28rem;
 	color: #FFFFFF;
@@ -59,29 +68,7 @@
 	font-family: Avenir-Medium;
 	font-weight: 500;
 }
-.itemBlock .container-box .item:hover .mask {
-    display: none;
-}
-
-.itemBlock .container-box .item .hover_mask {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-    background-color: rgba(0, 0, 0, .6);
-	font-size: .28rem;
-	color: #FFFFFF;
-	line-height: .38rem;
-	font-family: Avenir-Medium;
-	font-weight: 500;
-	display: none;
-}
-.itemBlock .container-box .item .hover_mask>div {
+.itemBlock .container-box .item .mask>div {
 	width: 1.02rem;
     height: .32rem;
     margin-top: .06rem;
@@ -92,7 +79,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+	display: none;
 }
-.itemBlock .container-box .item:hover .hover_mask {
-	display: flex;
+.itemBlock .container-box .item:hover .mask>div {
+    display: flex;
+}
+.itemBlock .container-box .item:hover .mask {
+	height: 100%;
 }
