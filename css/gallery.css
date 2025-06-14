@@ -5,26 +5,26 @@
     background-color: #FFFFFF;
 }
 .itemBlock .container-box {
-	max-width: 14.4rem;
+	max-width: 1440px;
 	margin: 0 auto;
-	padding: .72rem 1.2rem;
+	padding: 72px 120px;
 }
 .itemBlock h5 {
-	font-size: .28rem;
+	font-size: 28px;
 	color: #0C3375;
 	font-family: Avenir-Medium;
 	font-weight: 500;
-	line-height: .38rem;
+	line-height: 38px;
     text-align: center;
 }
 .itemBlock p {
-	font-size: .22rem;
+	font-size: 22px;
 	color: rgba(0, 0, 0, .85);
 	font-family: Avenir-Roman;
-	line-height: .34rem;
-	margin-top: .32rem;
+	line-height: 34px;
+	margin-top: 32px;
     text-align: justify;
-    padding: 0 .66rem;
+    padding: 0 66px;
 }
 .itemBlock img {
     width: 100%;
@@ -32,18 +32,18 @@
     display: block;
 }
 .itemBlock .container-box>div {
-    margin-top: .46rem;
-    padding: 0 .66rem;
+    margin-top: 46px;
+    padding: 0 66px;
 }
 .gallerySwiper {
-    width: 7.48rem;
-    height: 5rem;
+    width: 748px;
+    height: 500px;
     float: left;
 }
 .gallerySwiper .swiper-button-prev,
 .gallerySwiper .swiper-button-next {
-    width: .36rem;
-    height: .36rem;
+    width: 36px;
+    height: 36px;
     top: 50%;
 	transform: translate(0, -50%);
     background-position: center;
@@ -57,14 +57,14 @@
     z-index: 1;
 }
 .gallerySwiper .swiper-button-prev {
-    left: .2rem;
+    left: 20px;
 }
 .gallerySwiper .swiper-button-next {
-    right: .2rem;
+    right: 20px;
 }
 .img-list {
-    width: 3.12rem;
-    height: 5rem;
+    width: 312px;
+    height: 500px;
     float: right;
     overflow: hidden;
 }
@@ -74,10 +74,10 @@
     flex-wrap: wrap;
 }
 .img-list img {
-    width: 1.28rem;
-    height: .84rem;
-    margin-left: .2rem;
-    margin-top: .2rem;
+    width: 128px;
+    height: 84px;
+    margin-left: 20px;
+    margin-top: 20px;
     cursor: pointer;
 }
 .img-list img:nth-child(1),
@@ -85,14 +85,14 @@
     margin-top: 0;
 }
 .img-list a {
-    width: 1.28rem;
-    height: .84rem;
+    width: 128px;
+    height: 84px;
     background-color: #2357A5;
-    font-size: .16rem;
+    font-size: 16px;
 	color: #FFFFFF;
 	font-family: Avenir-Medium;
     font-weight: 500;
-	line-height: .86rem;
+	line-height: 86px;
     text-align: center;
     text-decoration: none;
 }

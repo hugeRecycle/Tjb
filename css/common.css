@@ -45,8 +45,8 @@ display:none
 /* header */
 .header-box {
 	width: 100%;
-	height: .72rem;
-	padding: 0 .6rem;
+	height: 72px;
+	padding: 0 60px;
 	box-sizing: border-box;
 	position: fixed;
 	top: 0;
@@ -64,20 +64,20 @@ display:none
 	align-items: center;
 }
 .header-box .logo-box a {
-	margin-right: .32rem;
+	margin-right: 32px;
 	cursor: pointer;
 }
 .header-box .logo-box a:last-child {
 	margin-right: 0;
 }
 .header-box .logo-box img {
-	height: .4rem;
+	height: 40px;
 	display: block;
 	object-fit: cover;
 }
 .header-box .logo-box a:last-child img {
-	width: 1.98rem;
-	height: .36rem;
+	width: 198px;
+	height: 36px;
 	margin-right: 0;
 }
 
@@ -91,15 +91,15 @@ display:none
 .header-box .menu-box ul {
 	height: 100%;
 	display: flex;
-    margin-left: .36rem;
-padding-top: .2rem;
+    margin-left: 36px;
+padding-top: 20px;
     box-sizing: border-box;
 }
 .header-box .menu-box ul li {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-  	margin-right: .32rem;
+  	margin-right: 32px;
 	cursor: pointer;
 	position: relative;
 }
@@ -111,25 +111,25 @@ padding-top: .2rem;
   	text-decoration: none;
   	font-family: Avenir-Heavy;
 	font-weight: 800;
-  	font-size: .16rem;
+  	font-size: 16px;
 }
 .header-box .menu-box li a:hover {
 	color: rgba(0, 0, 0, .65);
 }
 .header-box .menu-box li a img {
-	width: .11rem;
-	height: .11rem;
-	margin-left: .06rem;
+	width: 11px;
+	height: 11px;
+	margin-left: 6px;
 }
 .header-box .menu-box li:hover .childList {
 	display: block;
 }
 .header-box .menu-box .childList {
 	position: absolute;
-	top: .72rem;
+	top: 72px;
     left: 0;
 	z-index: 9;
-	width: 2.4rem;
+	width: 240px;
 	height: auto;
 	background-color: rgba(0, 0, 0, .5);
 	display: flex;
@@ -142,22 +142,22 @@ padding-top: .2rem;
 	content: "";
 	background-color: #FF8600;
 	width: 100%;
-	height: .02rem;
+	height: 2px;
 	left: 0;
     top: 0;
 }
 .header-box .menu-box .childList li {
-	padding: 0 .28rem;
-	line-height: .48rem;
-	border-bottom: .01rem solid rgba(255, 255, 255, .2);
+	padding: 0 28px;
+	line-height: 48px;
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
 	margin-right: 0;
 	justify-content: flex-start;
 }
 .header-box .menu-box .childList li a {
-	font-size: .16rem;
+	font-size: 16px;
 	color: #FFFFFF;
 	font-family: Avenir-Roman;
-	line-height: .48rem;
+	line-height: 48px;
 	text-align: center;
 }
 .header-box .menu-box .childList li a::before,
@@ -172,24 +172,24 @@ padding-top: .2rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-left: .24rem;
-    margin-top: .2rem;
-	height: .32rem;
+	margin-left: 24px;
+    margin-top: 20px;
+	height: 32px;
 	cursor: pointer;
 display: none;
 }
 .header-box .language-box img {
-	width: .2rem;
-	height: .2rem;
+	width: 20px;
+	height: 20px;
 	display: block;
 }
 .header-box .language-box span {
-	margin-left: .06rem;
+	margin-left: 6px;
 	font-family: Avenir-Medium;
 	font-weight: 500;
-	font-size: .16rem;
+	font-size: 16px;
 	color: rgba(0, 0, 0, .65);
-	padding-top: .04rem;
+	padding-top: 4px;
 }
 
 
@@ -198,8 +198,8 @@ display: none;
 /* footer */
 .footer-box {
 	width: 100%;
-	height: 1.16rem;
-	padding: 0 .6rem;
+	height: 116px;
+	padding: 0 60px;
 	background-color: #08214D;
 	box-sizing: border-box;
 	display: flex;
@@ -207,29 +207,29 @@ display: none;
 	justify-content: space-between;
 }
 .footer-box .logo-box {
-	/* width: 5.5rem;*/
+	/* width: 550px;*/
 	display: flex;
 	justify-content: space-between;
 }
 .footer-box .logo-box img {
-	/* width: 1.46rem; */
-	height: .4rem;
+	/* width: 146px; */
+	height: 40px;
 	display: block;
 }
 .footer-box .logo-box img:nth-child(2) {
-	/*width: 2.69rem;*/
-	margin-left: .15rem;
+	/*width: 269px;*/
+	margin-left: 15px;
 }
 .footer-box .labInfo-box {
 	width: fit-content;
-    margin-left: .15rem;
+    margin-left: 15px;
 }
 .footer-box .labInfo-box p {
-	font-size: .12rem;
-	line-height: .18rem;
+	font-size: 12px;
+	line-height: 18px;
 	font-family: Avenir-Roman;
 	color: #FFFFFF;
-	margin-top: .04rem;
+	margin-top: 4px;
 }
 .footer-box .labInfo-box p:nth-child(2) {
 	margin-top: 0;
@@ -239,14 +239,14 @@ display: none;
 	font-weight: 500;
 }
 .footer-box .labInfo-box a {
-	width: .86rem;
-    height: .3rem;
-	line-height: .32rem;
+	width: 86px;
+    height: 30px;
+	line-height: 32px;
     display: block;
     text-align: center;
-    border-radius: calc(infinity * 0.01rem);
+    border-radius: 15px;
     background-color: #fff;
-    font-size: .14rem;
+    font-size: 14px;
     font-family: Avenir-Heavy;
 	font-weight: 800;
     text-decoration: none;
@@ -254,16 +254,16 @@ display: none;
 	float: right;
 }
 .footer-box .filings-box {
-	/* width: 2.97rem; */
-    margin-left: .15rem;
+	/* width: 297px; */
+    margin-left: 15px;
 }
 .footer-box .filings-box p {
-	margin-top: .06rem;
-	font-size: .11rem;
+	margin-top: 6px;
+	font-size: 11px;
     font-family: Avenir-Medium;
 	font-weight: 500;
 	color: rgba(255, 255, 255, .4);
-	line-height: .17rem;
+	line-height: 17px;
 }
 .footer-box .filings-box p:first-child {
 	margin-top: 0;
@@ -276,9 +276,9 @@ display: none;
 /* banner */
 .banner-box {
 	width: 100%;
-	height: 4rem;
+	height: 400px;
 	position: relative;
-	margin-top: .72rem;
+	margin-top: 72px;
 }
 .bannerSwiper{
 	width: 100%;
@@ -303,22 +303,22 @@ display: none;
 .banner-box .banner-content .txt-box {
 	width: 100%;
     height: 100%;
-	padding: .6rem;
+	padding: 60px;
 }
 .banner-box .banner-content .txt-box h6 {
-	font-size: .26rem;
+	font-size: 26px;
 	color: #FFFFFF;
 	font-family: Avenir-Medium;
 	font-weight: 500;
-	line-height: .36rem;
-	margin-bottom: .16rem;
+	line-height: 36px;
+	margin-bottom: 16px;
 }
 .banner-box .banner-content .txt-box p {
-	font-size: .2rem;
+	font-size: 20px;
 	color: rgba(255, 255, 255, .85);
 	font-family: Avenir-Roman;
-	line-height: .27rem;
-	margin-top: .08rem;
+	line-height: 27px;
+	margin-top: 8px;
 }
 
 /* swiper */
@@ -326,7 +326,7 @@ display: none;
     background-image: url(../img/icon_swiperBtn_prev.png);
 }
 .swiper-button-next {
-    right: .2rem;
+    right: 20px;
     background-image: url(../img/icon_swiperBtn_next.png);
 }
 .swiper-button-prev::after,

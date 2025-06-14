@@ -1,15 +1,15 @@
 .itemBlock .container-box {
-	max-width: 14.4rem;
+	max-width: 1440px;
 	margin: 0 auto;
-	padding: .72rem 1.2rem;
+	padding: 72px 120px;
 	display: flex;
 	flex-wrap: wrap;
 }
 .itemBlock .container-box .item {
-	width: 3.7rem;
-	height: 2.77rem;
-	margin-right: .45rem;
-	margin-top: .45rem;
+	width: 370px;
+	height: 277px;
+	margin-right: 45px;
+	margin-top: 45px;
 	position: relative;
 	cursor: pointer;
 }
@@ -36,28 +36,28 @@
 }
 .itemBlock .container-box .item .mask>div {
 	width: 100%;
-	height: .86rem;
-	margin-bottom: .38rem;
+	height: 86px;
+	margin-bottom: 38px;
 	background-color: rgba(255, 255, 255, .6);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 .itemBlock .container-box .item .mask>div p {
-	font-size: .18rem;
+	font-size: 18px;
 	text-align: center;
 	font-family: Avenir-Heavy;
 	font-weight: 800;
 	color: #D92B2B;
-	line-height: .33rem;
-	margin-top: .02rem;
+	line-height: 33px;
+	margin-top: 2px;
 }
 .itemBlock .container-box .item .mask>div p:first-child {
-	font-size: .2rem;
+	font-size: 20px;
 	color: rgba(0, 0, 0, .85);
 	font-family: Avenir-Medium;
 	font-weight: 500;
-	line-height: .27rem;
+	line-height: 27px;
 	margin-top: 0;
 }
 .itemBlock .container-box .item .mask>div span {

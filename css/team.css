@@ -10,14 +10,14 @@
 	right:0;
 	bottom:0;
 	width:100%;
-	height:1.4rem;
+	height:140px;
 	content:"";
 	background:linear-gradient(180deg,rgba(0,0,0,0) 0,rgba(0,0,0,.6) 100%)
 }
 .bannerSwiper .swiper-button-prev,
 .bannerSwiper .swiper-button-next {
-    width: .36rem;
-    height: .36rem;
+    width: 36px;
+    height: 36px;
     top: 50%;
 	transform: translate(0, -50%);
     background-position: center;
@@ -31,31 +31,31 @@
     z-index: 1;
 }
 .bannerSwiper .swiper-button-prev {
-    left: .2rem;
+    left: 20px;
 }
 .bannerSwiper .swiper-button-next {
-    right: .2rem;
+    right: 20px;
 }
 .bannerSwiper .swiper-pagination-bullet {
-	width: .05rem;
-	height: .05rem;
+	width: 5px;
+	height: 5px;
 	border-radius: 50%;
 	background: rgba(255, 255, 255, .45);
 	opacity: 1;
 }
 .bannerSwiper .swiper-pagination-bullet-active {
-	width: .8rem;
-	border-radius: .13rem;
+	width: 80px;
+	border-radius: 13px;
 	opacity: 1;
 	position: relative;
 }
 .bannerSwiper .swiper-pagination-bullet-active::before{
 	left: 0;
 	width: 0;
-	height: .05rem;
+	height: 5px;
 	bottom: 0;
 	content:"";
-	border-radius: .13rem;
+	border-radius: 13px;
 	background-color:#FFFFFF;
 	position: absolute;
 	z-index: 1;
@@ -66,71 +66,71 @@
 }
 @keyframes grow{
 	0%{width: 0}
-	100%{width: .8rem}
+	100%{width: 80px}
 }
 @-webkit-keyframes grow{
 	0%{width: 0}
-	100%{width: .8rem}
+	100%{width: 80px}
 }
 .bannerSwiper .swiper-pagination {
-	bottom: -0.25rem !important;
+	bottom: -25px !important;
 }
 
 .itemBlock .container-box {
-	max-width: 14.4rem;
+	max-width: 1440px;
 	margin: 0 auto;
-	padding: 0 1.2rem .72rem;
+	padding: 0 120px 72px;
 }
 .itemBlock:first-child .container-box {
-	padding-top: .72rem;
+	padding-top: 72px;
 }
 .itemBlock img {
 	display: block;
 }
 .itemBlock .info-box {
-	padding: .3rem .4rem;
+	padding: 30px 40px;
 	background-color: #F5F5F5;
-	border: .01rem solid rgba(0, 0, 0, .1);
-	border-radius: .02rem;
-	margin-top: .18rem;
+	border: 1px solid rgba(0, 0, 0, .1);
+	border-radius: 2px;
+	margin-top: 18px;
 display:flex;
 }
 .itemBlock .info-box img {
-	width: 2.2rem;
+	width: 220px;
 	height: 100%;
-	margin-right: .2rem;
+	margin-right: 20px;
 }
 .itemBlock .info-box .txt-box {
-	width: calc(100% - 2.4rem);
+	width: calc(100% - 240px);
 }
 .itemBlock .info-box .txt-box h6 {
-	font-size: .2rem;
+	font-size: 20px;
 	color: rgba(0, 0, 0, .85);
 	font-family: Avenir-Heavy;
 	font-weight: 800;
-	line-height: .27rem;
+	line-height: 27px;
 }
 .itemBlock .info-box .txt-box>div {
-	width: 1.05rem;
-	height: .27rem;
-	padding-top: .02rem;
-	font-size: .14rem;
+	width: 105px;
+	height: 27px;
+	padding-top: 2px;
+	font-size: 14px;
 	color: #FFFFFF;
 	font-family: Avenir-Heavy;
 	font-weight: 500;
-	border-radius: .04rem;
+	border-radius: 4px;
 	background-color: #F28D00;
-	margin-top: .12rem;
+	margin-top: 12px;
 	display: flex;
     align-items: center;
     justify-content: center;
 }
 .itemBlock .info-box .txt-box p {
-	font-size: .15rem;
+	font-size: 15px;
 	color: rgba(0, 0, 0, .85);
 	font-family: Avenir-Roman;
-	line-height: .22rem;
-	margin-top: .12rem;
+	line-height: 22px;
+	margin-top: 12px;
 }
 .itemBlock .info-box .txt-box p:last-child {
 	color: rgba(0, 0, 0, .65);
@@ -142,38 +142,38 @@ display:flex;
 	flex-wrap: wrap;
 }
 .itemBlock ul li {
-	width: 2.6rem;
-	margin-right: .53rem;
-	margin-top: .56rem;
-	padding: .2rem;
+	width: 260px;
+	margin-right: 53px;
+	margin-top: 56px;
+	padding: 20px;
 	background-color: #F5F5F5;
-	border: .01rem solid rgba(0, 0, 0, .1);
-	border-radius: .02rem;
+	border: 1px solid rgba(0, 0, 0, .1);
+	border-radius: 2px;
 	box-sizing: border-box;
 }
 .itemBlock ul li:nth-child(-n+4) {
-	margin-top: .18rem;
+	margin-top: 18px;
 }
 .itemBlock ul li:nth-child(4n) {
 	margin-right: 0;
 }
 .itemBlock ul li>img {
-	width: 2.2rem;
-	height: 2.6rem;
-	margin-bottom: .12rem;
+	width: 220px;
+	height: 260px;
+	margin-bottom: 12px;
 }
 .itemBlock ul li>p {
-	font-size: .15rem;
+	font-size: 15px;
 	color: rgba(0, 0, 0, .85);
 	font-family: Avenir-Roman;
-	line-height: .2rem;
-	margin-top: .04rem;
+	line-height: 20px;
+	margin-top: 4px;
 }
 .itemBlock ul li>p:nth-child(2) {
-	font-size: .18rem;
+	font-size: 18px;
 	font-family: Avenir-Heavy;
 	font-weight: 800;
-	line-height: .25rem;
+	line-height: 25px;
 }
 .itemBlock ul li>p:last-child {
 	color: rgba(0, 0, 0, .65);

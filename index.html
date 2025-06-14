@@ -14,7 +14,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/d3.min.js"></script>
     <script src="js/d3.layout.cloud.js"></script>
-    <script src="js/setRem.js"></script>
+
 </head>
 <body>
 <header class="header-box">
@@ -490,8 +490,8 @@
         const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
         if (isMobile) {
             $('.itemBlock2 .container-box').css('scale', '0.45')
-            $('.itemBlock2 .container-box h5').css('margin-top', '-0.7rem')
-            $('.itemBlock2 .shapeBox').css('margin-top', '-4.5rem')
+            				$('.itemBlock2 .container-box h5').css('margin-top', '-70px')
+				$('.itemBlock2 .shapeBox').css('margin-top', '-450px')
             $('.itemBlock2 .shapeBox').css('scale', '1')
             $('.itemBlock3 .container-box').css('scale', '0.5')
             $('#d3_cloud svg').css('scale', '0.8')
@@ -604,15 +604,15 @@
                 .enter().append("text")
                 // .style("font-size", function(d) { return d.size + "px"; })
                 .style("font-size", function (d, i) {
-                    let size = 0.12;
+                    let size = 12;
                     if (i <= 5) {
-                        size = 0.35
+                        size = 35
                     } else if (i > 5 && i <= 15) {
-                        size = 0.25
+                        size = 25
                     } else if (i > 15 && i <= 25) {
-                        size = 0.15
+                        size = 15
                     }
-                    return size + "rem";
+                    				return size + "px";
                 })
                 .style("font-family", "Impact")
                 // .style("fill", function(d, i) { return words_list[i].color || '#999' ; })
