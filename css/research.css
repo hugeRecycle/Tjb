@@ -2,22 +2,14 @@
 	max-width: 1440px;
 	margin: 0 auto;
 	padding: 72px 120px;
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 45px;
 }
 .itemBlock .container-box .item {
-	width: 370px;
 	height: 277px;
-	margin-right: 45px;
-	margin-top: 45px;
 	position: relative;
 	cursor: pointer;
-}
-.itemBlock .container-box .item:nth-child(3n) {
-	margin-right: 0;
-}
-.itemBlock .container-box .item:nth-child(-n+3) {
-	margin-top: 0;
 }
 .itemBlock .container-box .item img {
 	width: 100%;
@@ -70,27 +62,47 @@
 	background-color: transparent;
 }
 
+/* 响应式布局断点 */
+/* 4列布局：超宽屏显示 */
+@media screen and (min-width: 1600px) {
+	.itemBlock .container-box {
+		grid-template-columns: repeat(4, 1fr);
+		gap: 50px;
+	}
+}
+
+/* 2列布局：当容器宽度不足以显示3列时 */
+@media screen and (max-width: 1100px) {
+	.itemBlock .container-box {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 40px;
+	}
+}
+
+/* 1列布局：当容器宽度不足以显示2列时 */
+@media screen and (max-width: 750px) {
+	.itemBlock .container-box {
+		grid-template-columns: 1fr;
+		gap: 30px;
+		justify-items: center;
+	}
+	
+	.itemBlock .container-box .item {
+		max-width: 400px;
+		width: 100%;
+	}
+}
+
 /* 移动端适配 */
 @media screen and (max-width: 768px) {
 	.itemBlock .container-box {
 		padding: 30px 20px;
-		justify-content: center;
+		gap: 20px;
 	}
 	
 	.itemBlock .container-box .item {
-		width: 100%;
-		max-width: 350px;
 		height: 250px;
-		margin-right: 0;
-		margin-top: 20px;
-	}
-	
-	.itemBlock .container-box .item:nth-child(3n) {
-		margin-right: 0;
-	}
-	
-	.itemBlock .container-box .item:first-child {
-		margin-top: 0;
+		max-width: 350px;
 	}
 	
 	.itemBlock .container-box .item .mask>div {
