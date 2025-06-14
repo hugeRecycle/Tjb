@@ -473,3 +473,209 @@ main {
 .itemBlock4 .btn-box a {
 	width: 248px;
 }
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+	/* 主内容区域适配 */
+	main {
+		height: calc(100% - 60px);
+		top: 60px;
+	}
+	
+	/* itemBlock2 适配 */
+	.itemBlock2 .container-box {
+		width: 100%;
+		padding: 20px;
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	.shapeBox {
+		width: 100%;
+		float: none;
+		order: -1;
+		margin-bottom: 20px;
+	}
+	
+	.itemBlock2 h5 {
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+	
+	.itemBlock2 .nameBox {
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+	
+	.itemBlock2 .nameBox img {
+		width: 80px;
+		height: 80px;
+		margin-right: 15px;
+	}
+	
+	.itemBlock2 .nameBox span {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	
+	.itemBlock2 .nameBox .titleSpan {
+		font-size: 16px;
+		margin-top: 5px;
+	}
+	
+	.itemBlock2 .article-txt {
+		text-align: left;
+		margin-bottom: 20px;
+	}
+	
+	.itemBlock2 .article-txt p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	
+	.itemBlock2 .article-txt img {
+		width: 100%;
+		float: none;
+		margin: 15px 0;
+	}
+	
+	.itemBlock2 .btn-box {
+		justify-content: center;
+		margin-top: 20px;
+	}
+	
+	.itemBlock2 .btn-box a {
+		width: 200px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 16px;
+	}
+	
+	.itemBlock2 .decorative-imageBox {
+		display: none;
+	}
+	
+	/* itemBlock3 适配 */
+	.itemBlock3 .container-box {
+		width: 100%;
+		padding: 20px;
+		flex-direction: column;
+	}
+	
+	.itemBlock3 .title-box {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	
+	.itemBlock3 .title-box p {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	
+	.itemBlock3 .title-box p:last-child {
+		font-size: 20px;
+		line-height: 28px;
+		margin-bottom: 15px;
+	}
+	
+	.itemBlock3 .wordCloud-box {
+		width: 100%;
+		height: 300px;
+		margin-top: 10px;
+	}
+	
+	.itemBlock3 .wordCloudDetail-box p {
+		font-size: 16px;
+		line-height: 22px;
+		text-align: center;
+		padding: 0 10px;
+	}
+	
+	.itemBlock3 .wordCloudDetail-box p:first-child {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	
+	/* itemBlock4 适配 */
+	.itemBlock4 .container-box {
+		width: 100%;
+		padding: 20px;
+	}
+	
+	.itemBlock4 h5 {
+		font-size: 24px;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	
+	.itemBlock4 .boxH {
+		height: auto;
+		flex-direction: column;
+	}
+	
+	.itemBlock4 .newsSwiper {
+		width: 100%;
+		float: none;
+		margin-bottom: 20px;
+	}
+	
+	.itemBlock4 .newsSwiper img {
+		height: 200px;
+	}
+	
+	.itemBlock4 .newsSwiper .swiper-slide>div {
+		padding: 15px;
+	}
+	
+	.itemBlock4 .newsSwiper p {
+		font-size: 16px;
+		line-height: 22px;
+	}
+	
+	.itemBlock4 .newsSwiper p:first-child {
+		font-size: 12px;
+		line-height: 16px;
+	}
+	
+	.itemBlock4 .newsSwiper p:last-child {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	
+	.itemBlock4 .article-txt ul {
+		width: 100%;
+		float: none;
+		margin-left: 0;
+	}
+	
+	.itemBlock4 .article-txt ul li {
+		padding: 10px 15px;
+	}
+	
+	.itemBlock4 .article-txt ul li.active,
+	.itemBlock4 .article-txt ul li:hover {
+		padding-left: 20px;
+	}
+	
+	.itemBlock4 .article-txt ul li p:first-child {
+		font-size: 12px;
+		line-height: 16px;
+	}
+	
+	.itemBlock4 .article-txt ul li p {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	
+	.itemBlock4 .btn-box {
+		justify-content: center;
+		margin-top: 20px;
+	}
+	
+	.itemBlock4 .btn-box a {
+		width: 200px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 16px;
+	}
+}

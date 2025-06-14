@@ -87,3 +87,71 @@
 .itemBlock .container-box .item:hover .mask {
 	height: 100%;
 }
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+	.footer-box {
+		position: static;
+	}
+	
+	.banner-box {
+		height: 180px;
+	}
+	
+	.banner-box .banner-content .txt-box {
+		width: 100%;
+		padding: 0 20px;
+	}
+	
+	.banner-box .banner-content .txt-box p {
+		width: 100%;
+		font-size: 16px;
+		line-height: 22px;
+	}
+	
+	.banner-box .banner-content .txt-box p:last-child {
+		margin-top: 6px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	
+	.itemBlock {
+		padding-bottom: 30px;
+	}
+	
+	.itemBlock .container-box {
+		padding: 30px 20px;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.itemBlock .container-box .item {
+		width: 100%;
+		max-width: 300px;
+		height: 300px;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+	
+	.itemBlock .container-box .item:last-child {
+		margin-bottom: 0;
+	}
+	
+	.itemBlock .container-box .item .mask {
+		height: 100px;
+		font-size: 20px;
+		line-height: 28px;
+	}
+	
+	.itemBlock .container-box .item .mask>div {
+		width: 80px;
+		height: 28px;
+		margin-top: 5px;
+		font-size: 10px;
+		display: flex;
+	}
+	
+	.itemBlock .container-box .item:hover .mask {
+		height: 100%;
+	}
+}

@@ -178,3 +178,95 @@ display:flex;
 .itemBlock ul li>p:last-child {
 	color: rgba(0, 0, 0, .65);
 }
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+	.itemBlock .container-box {
+		padding: 0 20px 30px;
+	}
+	
+	.itemBlock:first-child .container-box {
+		padding-top: 30px;
+	}
+	
+	.itemBlock .info-box {
+		padding: 20px;
+		margin-top: 15px;
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	.itemBlock .info-box img {
+		width: 100%;
+		max-width: 200px;
+		height: 200px;
+		margin: 0 auto 15px;
+		object-fit: cover;
+	}
+	
+	.itemBlock .info-box .txt-box {
+		width: 100%;
+	}
+	
+	.itemBlock .info-box .txt-box h6 {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	
+	.itemBlock .info-box .txt-box>div {
+		width: 90px;
+		height: 24px;
+		font-size: 12px;
+		margin: 10px auto;
+	}
+	
+	.itemBlock .info-box .txt-box p {
+		font-size: 14px;
+		line-height: 20px;
+		margin-top: 10px;
+		text-align: left;
+	}
+	
+	.itemBlock ul {
+		justify-content: center;
+	}
+	
+	.itemBlock ul li {
+		width: 100%;
+		max-width: 280px;
+		margin-right: 0;
+		margin-top: 20px;
+		text-align: center;
+	}
+	
+	.itemBlock ul li:nth-child(-n+4) {
+		margin-top: 20px;
+	}
+	
+	.itemBlock ul li:first-child {
+		margin-top: 15px;
+	}
+	
+	.itemBlock ul li:nth-child(4n) {
+		margin-right: 0;
+	}
+	
+	.itemBlock ul li>img {
+		width: 100%;
+		max-width: 180px;
+		height: 200px;
+		margin: 0 auto 10px;
+		object-fit: cover;
+	}
+	
+	.itemBlock ul li>p {
+		font-size: 14px;
+		line-height: 18px;
+		margin-top: 3px;
+	}
+	
+	.itemBlock ul li>p:nth-child(2) {
+		font-size: 16px;
+		line-height: 22px;
+	}
+}

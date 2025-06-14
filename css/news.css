@@ -217,3 +217,91 @@ height: 44px;
 .itemBlock .container-box #news-list li:hover p:last-child {
     background-image: url('../images/news/icon_more_active.png');
 }
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+	/* 容器适配 */
+	.itemBlock .container-box {
+		padding: 30px 20px;
+	}
+	
+	/* 标题适配 */
+	.itemBlock .container-box h5 {
+		font-size: 24px;
+		line-height: 32px;
+		margin-bottom: 20px;
+	}
+	
+	/* 标签栏适配 */
+	.itemBlock .container-box #tab-box {
+		flex-wrap: wrap;
+		gap: 10px;
+		margin-bottom: 20px;
+	}
+	
+	.itemBlock .container-box #tab-box li {
+		height: 30px;
+		font-size: 12px;
+		padding: 1px 20px 0;
+		margin-right: 0;
+		border-radius: 15px;
+	}
+	
+	/* 新闻列表适配 */
+	.itemBlock .container-box #news-list {
+		padding-top: 20px;
+		gap: 20px;
+		justify-content: center;
+	}
+	
+	.itemBlock .container-box #news-list li {
+		width: 100%;
+		max-width: 300px;
+	}
+	
+	.itemBlock .container-box #news-list li>img {
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+	}
+	
+	.itemBlock .container-box #news-list li .txt {
+		padding: 15px 18px 20px;
+	}
+	
+	.itemBlock .container-box #news-list li .txt .mask {
+		height: 200px;
+		padding: 15px;
+	}
+	
+	.itemBlock .container-box #news-list li .txt .mask>div {
+		width: 50px;
+		line-height: 22px;
+		font-size: 10px;
+	}
+	
+	.itemBlock .container-box #news-list li .txt p:nth-last-child(4) {
+		font-size: 10px;
+		line-height: 14px;
+	}
+	
+	.itemBlock .container-box #news-list li .txt p:nth-last-child(3) {
+		font-size: 14px;
+		line-height: 20px;
+		margin-top: 10px;
+		height: 40px;
+	}
+	
+	.itemBlock .container-box #news-list li .txt p:nth-last-child(2) {
+		font-size: 11px;
+		line-height: 14px;
+		margin-top: 8px;
+	}
+	
+	.itemBlock .container-box #news-list li .txt p:last-child {
+		font-size: 11px;
+		line-height: 14px;
+		margin-top: 12px;
+		background-position: 85px center;
+	}
+}

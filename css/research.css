@@ -69,3 +69,42 @@
 .itemBlock .container-box .item:hover .mask>div {
 	background-color: transparent;
 }
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+	.itemBlock .container-box {
+		padding: 30px 20px;
+		justify-content: center;
+	}
+	
+	.itemBlock .container-box .item {
+		width: 100%;
+		max-width: 350px;
+		height: 250px;
+		margin-right: 0;
+		margin-top: 20px;
+	}
+	
+	.itemBlock .container-box .item:nth-child(3n) {
+		margin-right: 0;
+	}
+	
+	.itemBlock .container-box .item:first-child {
+		margin-top: 0;
+	}
+	
+	.itemBlock .container-box .item .mask>div {
+		height: 70px;
+		margin-bottom: 30px;
+	}
+	
+	.itemBlock .container-box .item .mask>div p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	
+	.itemBlock .container-box .item .mask>div p:first-child {
+		font-size: 18px;
+		line-height: 24px;
+	}
+}

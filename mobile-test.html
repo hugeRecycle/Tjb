@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>移动端菜单测试</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <script src="js/mobile-menu.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .test-content {
+            margin-top: 72px;
+            padding: 20px;
+            text-align: center;
+        }
+        .test-content h1 {
+            color: #0C3375;
+            margin-bottom: 20px;
+        }
+        .test-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .device-info {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        @media screen and (max-width: 768px) {
+            .test-content {
+                margin-top: 60px;
+            }
+            .test-content h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header class="header-box">
+    <div class="logo-box">
+        <a>
+            <img src="images/home/homepagelogo_dark_gray.png" alt="">
+        </a>
+        <a href="https://www.westlake.edu.cn/" target="_blank">
+            <img src="img/icon_headerLogo_r.png" alt="">
+        </a>
+    </div>
+    <nav class="menu-box">
+        <ul id="pc-menu1">
+            <li class="active">
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="News.html">News</a>
+            </li>
+            <li>
+                <a href="Research.html">Research</a>
+            </li>
+            <li>
+                <a href="Gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a href="Publications.html">Publications</a>
+            </li>
+            <li>
+                <a href="Team.html">Team</a>
+            </li>
+            <li>
+                <a href="Openings.html">Openings</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="language-box" id="langBtn">
+        <img src="img/icon_language.png" alt="">
+        <span>CN</span>
+    </div>
+    
+    <!-- 移动端菜单按钮 -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</header>
+
+<div class="test-content">
+    <h1>移动端菜单测试页面</h1>
+    <p>这是一个用于测试移动端菜单功能的页面。</p>
+    <p>在桌面端，您会看到传统的水平导航菜单。</p>
+    <p>在移动端（屏幕宽度小于768px），桌面菜单会隐藏，右上角会显示汉堡菜单按钮。</p>
+    <p>点击汉堡菜单按钮可以打开全屏移动端菜单。</p>
+    
+    <div class="device-info">
+        <h3>当前设备信息</h3>
+        <p>屏幕宽度: <span id="screenWidth"></span>px</p>
+        <p>用户代理: <span id="userAgent"></span></p>
+        <p>是否移动设备: <span id="isMobile"></span></p>
+    </div>
+    
+    <h3>测试说明</h3>
+    <p>1. 在桌面端浏览器中打开此页面</p>
+    <p>2. 使用浏览器开发者工具切换到移动设备视图</p>
+    <p>3. 测试汉堡菜单的打开和关闭功能</p>
+    <p>4. 测试菜单项的点击功能</p>
+    <p>5. 测试ESC键关闭菜单功能</p>
+    
+    <h3>新版本特性</h3>
+    <p>✅ 复用现有的menu-box结构，无需独立的移动端菜单</p>
+    <p>✅ 代码更简洁，维护性更好</p>
+    <p>✅ 菜单项自动同步，无需重复定义</p>
+    <p>✅ 从右侧滑入的流畅动画效果</p>
+</div>
+
+<script>
+    // 显示设备信息
+    document.getElementById('screenWidth').textContent = window.innerWidth;
+    document.getElementById('userAgent').textContent = navigator.userAgent;
+    document.getElementById('isMobile').textContent = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ? '是' : '否';
+    
+    // 监听窗口大小变化
+    window.addEventListener('resize', function() {
+        document.getElementById('screenWidth').textContent = window.innerWidth;
+    });
+</script>
+</body>
+</html> 
