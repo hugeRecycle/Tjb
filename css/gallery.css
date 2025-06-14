@@ -33,12 +33,18 @@
 }
 .itemBlock .container-box>div {
     margin-top: 46px;
-    padding: 0 66px;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.itemBlock .container-box>div .clean {
+    display: none;
 }
 .gallerySwiper {
-    width: 748px;
+    width: 740px;
     height: 500px;
-    float: left;
+    flex-shrink: 0;
 }
 .gallerySwiper .swiper-button-prev,
 .gallerySwiper .swiper-button-next {
@@ -63,9 +69,9 @@
     right: 20px;
 }
 .img-list {
-    width: 312px;
+    width: 280px;
     height: 500px;
-    float: right;
+    flex-shrink: 0;
     overflow: hidden;
 }
 .img-list .swiper-slide {
@@ -74,8 +80,8 @@
     flex-wrap: wrap;
 }
 .img-list img {
-    width: 128px;
-    height: 84px;
+    width: 120px;
+    height: 80px;
     margin-left: 20px;
     margin-top: 20px;
     cursor: pointer;
@@ -85,14 +91,14 @@
     margin-top: 0;
 }
 .img-list a {
-    width: 128px;
-    height: 84px;
+    width: 120px;
+    height: 80px;
     background-color: #2357A5;
     font-size: 16px;
 	color: #FFFFFF;
 	font-family: Avenir-Medium;
     font-weight: 500;
-	line-height: 86px;
+	line-height: 82px;
     text-align: center;
     text-decoration: none;
 }
@@ -120,13 +126,16 @@
 		padding: 0;
 		display: flex;
 		flex-direction: column;
+		gap: 20px;
+	}
+	
+	.itemBlock .container-box>div .clean {
+		display: block;
 	}
 	
 	.gallerySwiper {
 		width: 100%;
 		height: 250px;
-		float: none;
-		margin-bottom: 20px;
 	}
 	
 	.gallerySwiper .swiper-button-prev,
@@ -146,7 +155,6 @@
 	.img-list {
 		width: 100%;
 		height: 200px;
-		float: none;
 	}
 	
 	.img-list img {
