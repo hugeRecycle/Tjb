@@ -138,29 +138,23 @@ display:flex;
 
 
 .itemBlock ul {
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 56px 53px;
+	margin-top: 18px;
 }
 .itemBlock ul li {
-	width: 260px;
-	margin-right: 53px;
-	margin-top: 56px;
 	padding: 20px;
 	background-color: #F5F5F5;
 	border: 1px solid rgba(0, 0, 0, .1);
 	border-radius: 2px;
 	box-sizing: border-box;
 }
-.itemBlock ul li:nth-child(-n+4) {
-	margin-top: 18px;
-}
-.itemBlock ul li:nth-child(4n) {
-	margin-right: 0;
-}
 .itemBlock ul li>img {
-	width: 220px;
+	width: 100%;
 	height: 260px;
 	margin-bottom: 12px;
+	object-fit: cover;
 }
 .itemBlock ul li>p {
 	font-size: 15px;
@@ -177,6 +171,37 @@ display:flex;
 }
 .itemBlock ul li>p:last-child {
 	color: rgba(0, 0, 0, .65);
+}
+
+/* 响应式布局断点 */
+/* 3列布局：当容器宽度不足以显示4列时 */
+@media screen and (max-width: 1200px) {
+	.itemBlock ul {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 50px 40px;
+	}
+}
+
+/* 2列布局：当容器宽度不足以显示3列时 */
+@media screen and (max-width: 900px) {
+	.itemBlock ul {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 40px 30px;
+	}
+}
+
+/* 1列布局：当容器宽度不足以显示2列时 */
+@media screen and (max-width: 650px) {
+	.itemBlock ul {
+		grid-template-columns: 1fr;
+		gap: 30px;
+		justify-items: center;
+	}
+	
+	.itemBlock ul li {
+		max-width: 350px;
+		width: 100%;
+	}
 }
 
 /* 移动端适配 */
@@ -228,27 +253,13 @@ display:flex;
 	}
 	
 	.itemBlock ul {
-		justify-content: center;
-	}
-	
-	.itemBlock ul li {
-		width: 100%;
-		max-width: 280px;
-		margin-right: 0;
-		margin-top: 20px;
-		text-align: center;
-	}
-	
-	.itemBlock ul li:nth-child(-n+4) {
-		margin-top: 20px;
-	}
-	
-	.itemBlock ul li:first-child {
+		gap: 20px;
 		margin-top: 15px;
 	}
 	
-	.itemBlock ul li:nth-child(4n) {
-		margin-right: 0;
+	.itemBlock ul li {
+		max-width: 280px;
+		text-align: center;
 	}
 	
 	.itemBlock ul li>img {
