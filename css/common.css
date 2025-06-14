@@ -76,7 +76,6 @@ display:none
 	object-fit: cover;
 }
 .header-box .logo-box a:last-child img {
-	width: 198px;
 	height: 36px;
 	margin-right: 0;
 }
@@ -213,7 +212,7 @@ display: none;
 }
 .footer-box .logo-box img {
 	/* width: 146px; */
-	height: 40px;
+	height: 30px;
 	display: block;
 }
 .footer-box .logo-box img:nth-child(2) {
@@ -446,17 +445,16 @@ display: none;
 	
 	/* 调整头部布局 */
 	.header-box {
-		padding: 0 20px;
+		padding: 0 10px;
 		height: 60px;
 	}
-	
+
 	.header-box .logo-box img {
-		height: 32px;
+		height: 26px;
 	}
 	
 	.header-box .logo-box a:last-child img {
-		width: 158px;
-		height: 29px;
+		height: 24px;
 	}
 	
 	/* 调整banner高度 */
