@@ -275,7 +275,7 @@ display: none;
 /* banner */
 .banner-box {
 	width: 100%;
-	height: 400px;
+	min-height: 300px;
 	position: relative;
 	margin-top: 72px;
 }
@@ -288,16 +288,15 @@ display: none;
 	height: 100%;
 	object-fit: cover;
 	display: block;
+	position: absolute;
+	z-index: -1;
+	top: 0;
 }
 .banner-box .banner-content {
 	width: 100%;
-	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	position: absolute;
-	left: 0;
-	top: 0;
 }
 .banner-box .banner-content .txt-box {
 	width: 100%;
@@ -461,7 +460,6 @@ display: none;
 	/* 调整banner高度 */
 	.banner-box {
 		margin-top: 60px;
-		height: 300px;
 	}
 	
 	.banner-box .banner-content .txt-box {
