@@ -275,7 +275,7 @@ display: none;
 /* banner */
 .banner-box {
 	width: 100%;
-	min-height: 300px;
+	min-height: 220px;
 	position: relative;
 	margin-top: 72px;
 }
