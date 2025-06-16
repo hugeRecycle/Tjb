@@ -83,18 +83,18 @@
     max-width: 1440px;
     height: 98px;
 	margin: 0 auto;
-	padding: 0 120px;
+	padding: 0 clamp(15px, 5vw, 120px);
     display: flex;
     align-items: center;
-    font-size: 16px;
+    font-size: clamp(14px, 2.5vw, 16px);
     color: rgba(0,0,0,0.85);
     font-family: Avenir-Medium;
     font-weight: 500;
     border-bottom: 1.2px solid rgba(0,0,0,.1);
 }
 .back-box img {
-    width: 18px !important;
-    height: 18px !important;
+    width: clamp(16px, 2.5vw, 18px) !important;
+    height: clamp(16px, 2.5vw, 18px) !important;
     margin-right: 4px;
 }
 .back-box a {
@@ -108,40 +108,96 @@
 .itemBlock .container-box {
 	max-width: 1440px;
 	margin: 0 auto;
-	padding: 0 120px;
+	padding: 0 clamp(15px, 5vw, 120px);
 }
 .itemBlock .container-box .article-container {
     background-color: #F5F5F5;
-    padding: 32px 40px;
+    padding: clamp(20px, 4vw, 40px);
+    border-radius: 4px;
 }
 .itemBlock .container-box .article-container h5 {
-	font-size: 26px;
+	font-size: clamp(20px, 4vw, 26px);
 	color: rgba(0,0,0,0.85);
 	font-family: Avenir-Medium;
 	font-weight: 500;
-	line-height: 36px;
+	line-height: 1.4;
 }
 .itemBlock .container-box .article-container h6 {
-	font-size: 20px;
+	font-size: clamp(16px, 3vw, 20px);
 	color: #F28D00;
 	font-family: Avenir-Medium;
 	font-weight: 500;
-	line-height: 27px;
-    margin-top: 11px;
+	line-height: 1.4;
+    margin-top: clamp(8px, 2vw, 11px);
 }
 .itemBlock .container-box .article-container .article-txt {
-    margin-top: 28px;
+    margin-top: clamp(20px, 4vw, 28px);
     border-top: 1.2px solid rgba(0,0,0,.1);
-    padding: 14px 0 40px;
+    padding: clamp(10px, 2vw, 14px) 0 clamp(20px, 4vw, 40px);
 }
 .itemBlock .container-box .article-container .article-txt p {
-    font-size: 18px;
+    font-size: clamp(16px, 2.5vw, 18px);
     color: rgba(0,0,0,0.65);
 	font-family: Avenir-Roman;
-	line-height: 27px;
-    margin-top: 12px;
+	line-height: 1.6;
+    margin-top: clamp(8px, 2vw, 12px);
 }
 .itemBlock .container-box .article-container .article-txt img {
-    margin: 40px auto;
+    margin: clamp(20px, 4vw, 40px) auto;
     display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .itemBlock {
+        margin-top: 60px;
+    }
+    
+    .back-box {
+        height: 60px;
+        padding: 0 15px;
+    }
+    
+    .itemBlock .container-box {
+        padding: 15px;
+    }
+    
+    .itemBlock .container-box .article-container {
+        padding: 20px 15px;
+    }
+    
+    .itemBlock .container-box .article-container .article-txt {
+        margin-top: 20px;
+        padding: 10px 0 20px;
+    }
+    
+    .itemBlock .container-box .article-container .article-txt p {
+        text-align: left !important;
+    }
+    
+    .itemBlock .container-box .article-container .article-txt img {
+        margin: 20px auto;
+    }
+    
+    /* 优化链接点击区域 */
+    .back-box a,
+    .itemBlock .container-box .article-container .article-txt a {
+        padding: 5px 0;
+    }
+    
+    /* 优化文本可读性 */
+    .itemBlock .container-box .article-container .article-txt p[style] {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+        text-align: left !important;
+    }
+    
+    /* 优化图片显示 */
+    .itemBlock .container-box .article-container .article-txt img[style] {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 500px !important;
+    }
 }
