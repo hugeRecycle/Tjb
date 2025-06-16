@@ -495,16 +495,6 @@
         setTimeout(function () {
             sessionStorage.clear();
         }, 0);
-        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-        if (isMobile) {
-            $('.itemBlock2 .container-box').css('scale', '0.45')
-            				$('.itemBlock2 .container-box h5').css('margin-top', '-70px')
-				$('.itemBlock2 .shapeBox').css('margin-top', '-450px')
-            $('.itemBlock2 .shapeBox').css('scale', '1')
-            $('.itemBlock3 .container-box').css('scale', '0.5')
-            $('#d3_cloud svg').css('scale', '0.8')
-            $('.itemBlock4 .container-box').css('scale', '0.5')
-        }
         var index = 0;
         if (sessionStorage.getItem("index")) {
             index = sessionStorage.getItem("index");
