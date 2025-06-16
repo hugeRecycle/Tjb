@@ -7,11 +7,15 @@ document.addEventListener('DOMContentLoaded', function() {
         return; // 如果元素不存在，直接返回
     }
     
-    // 打开移动端菜单
+    // 打开/关闭移动端菜单
     mobileMenuToggle.addEventListener('click', function() {
-        mobileMenuToggle.classList.add('active');
-        menuBox.classList.add('active');
-        document.body.style.overflow = 'hidden';
+        if (menuBox.classList.contains('active')) {
+            closeMobileMenu();
+        } else {
+            mobileMenuToggle.classList.add('active');
+            menuBox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
     });
     
     // 关闭移动端菜单
