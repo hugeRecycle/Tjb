@@ -4,7 +4,7 @@
 	z-index: 1;
 }
 .banner-box {
-	height: 220px;
+	min-height: 160px;
 }
 .banner-box .banner-content {
 	align-items: center;
@@ -89,9 +89,6 @@
 		position: static;
 	}
 	
-	.banner-box {
-		height: 180px;
-	}
 	
 	.banner-box .banner-content .txt-box {
 		width: 100%;

@@ -250,6 +250,9 @@ height: 44px;
 
 /* 移动端适配 */
 @media screen and (max-width: 768px) {
+	.bannerSwiper {
+		height: 180px;
+	}
 	/* 容器适配 */
 	.itemBlock .container-box {
 		padding: 30px 20px;

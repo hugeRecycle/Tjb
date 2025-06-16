@@ -206,6 +206,13 @@ display:flex;
 
 /* 移动端适配 */
 @media screen and (max-width: 768px) {
+	.banner-box{
+		min-height:125px;
+	}
+	.bannerSwiper {
+		height: 125px;
+		
+	}
 	.itemBlock .container-box {
 		padding: 0 20px 30px;
 	}
