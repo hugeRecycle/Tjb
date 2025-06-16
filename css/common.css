@@ -62,10 +62,12 @@ display:none
 .header-box .logo-box {
 	display: flex;
 	align-items: center;
+	position: relative;
 }
 .header-box .logo-box a {
 	margin-right: 20px;
 	cursor: pointer;
+	position: relative;
 }
 .header-box .logo-box a:last-child {
 	margin-right: 0;
@@ -391,6 +393,7 @@ display: none;
 		padding: 0;
 		transform: translateX(100%);
 		transition: transform 0.3s ease;
+		z-index: 99;
 	}
 	
 	.header-box .menu-box.active {
@@ -500,4 +503,15 @@ display: none;
 	.footer-box .filings-box {
 		margin: 15px 0 0;
 	}
+
+
+	/* 移动端菜单打开时的样式 */
+	body.menu-open{
+		overflow: hidden;
+	}
+	body.menu-open .header-box .logo-box {
+		z-index: 100;
+	}
+
+
 }

@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             mobileMenuToggle.classList.add('active');
             menuBox.classList.add('active');
-            document.body.style.overflow = 'hidden';
+            document.body.classList.add('menu-open');
         }
     });
     
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function closeMobileMenu() {
         mobileMenuToggle.classList.remove('active');
         menuBox.classList.remove('active');
-        document.body.style.overflow = '';
+        document.body.classList.remove('menu-open');
     }
     
     // 点击菜单项后关闭菜单
