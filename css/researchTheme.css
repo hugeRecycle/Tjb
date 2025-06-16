@@ -1,18 +1,75 @@
+.banner-box {
+    position: relative;
+    height: 320px;
+}
+
+.banner-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-box .banner-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-box .banner-content .txt-box {
+    width: 460px;
+    padding: 30px;
+    height: auto;
+    background-color: rgba(255, 255, 255, .6);
+    backdrop-filter: blur(5px);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner-box .banner-content .txt-box p {
+    font-size: 28px;
+    color: rgba(0, 0, 0, .85);
+    font-family: Avenir-Medium;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.banner-box .banner-content .txt-box p:last-child {
+    font-size: 20px;
+    color: #F28D00;
+    margin-top: 10px;
+}
+
 .itemBlock {
     background-color: #F5F5F5;
 }
+
 .itemBlock:nth-child(2n) {
     background-color: #FFFFFF;
 }
+
 .itemBlock .container-box {
-	max-width: 1440px;
-	margin: 0 auto;
-	padding: 72px 120px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 72px 120px;
+    display: flex;
+    gap: 56px;
 }
+
 .itemBlock:first-child .container-box {
     padding-top: 98px;
     position: relative;
 }
+
 .back-box {
     position: absolute;
     top: 36px;
@@ -26,50 +83,128 @@
     font-weight: 500;
     margin-bottom: 37px;
 }
+
 .back-box img {
     width: 18px !important;
     height: 18px !important;
     margin-right: 4px;
 }
+
 .back-box a {
     text-decoration: none;
     color: rgba(0,0,0,0.65);
 }
+
 .back-box span:nth-child(3) {
     margin: 0 8px;
     color: rgba(0,0,0,0.65);
 }
+
 .itemBlock img {
     width: 520px;
     height: 368px;
-    display: block;
-    float: left;
+    object-fit: cover;
+    border-radius: 4px;
 }
+
 .itemBlock:nth-child(2n) img {
     float: right;
 }
+
 .itemBlock:nth-child(2n) .article-txt {
     float: left;
 }
+
 .itemBlock .article-txt {
-    width: 624px;
-    float: right;
+    flex: 1;
+    min-width: 0;
 }
+
 .itemBlock .article-txt img {
     width: 60px;
     height: 60px;
-    float: none;
+    margin-bottom: 20px;
 }
+
 .itemBlock .article-txt p {
     font-size: 20px;
     color: rgba(0,0,0,0.65);
     font-family: Avenir-Roman;
-    margin-top: 12px;
-    line-height: 29px;
+    line-height: 1.6;
+    margin: 0;
 }
+
 .itemBlock .article-txt p:nth-child(2) {
     color: rgba(0,0,0,0.85);
     margin-top: 20px;
     line-height: 30px;
     font-size: 22px;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .banner-box {
+        height: 180px;
+    }
+    
+    .banner-box .banner-content .txt-box {
+        width: 90%;
+        max-width: 320px;
+        padding: 20px;
+    }
+    
+    .banner-box .banner-content .txt-box p {
+        font-size: 20px;
+    }
+    
+    .banner-box .banner-content .txt-box p:last-child {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    
+    .itemBlock .container-box {
+        padding: 40px 15px;
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .itemBlock:first-child .container-box {
+        padding-top: 60px;
+    }
+    
+    .back-box {
+        top: 20px;
+        left: 15px;
+        height: 20px;
+        font-size: 14px;
+    }
+    
+    .itemBlock img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 520/368;
+    }
+    
+    .itemBlock .article-txt img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 15px;
+    }
+    
+    .itemBlock .article-txt p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    
+    /* 优化链接点击区域 */
+    .back-box a {
+        padding: 5px 0;
+    }
+    
+    /* 优化文本可读性 */
+    .itemBlock .article-txt p[style] {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+        text-align: left !important;
+    }
 }
