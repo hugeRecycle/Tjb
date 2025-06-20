@@ -660,6 +660,10 @@ main {
 		font-size: 14px;
 		line-height: 18px;
 	}
+		
+	.itemBlock4 .newsSwiper p:nth-last-child(2) {
+		height: 46px;
+	}	
 	
 	.itemBlock4 .article-txt ul {
 		width: 100%;
@@ -685,7 +689,7 @@ main {
 		font-size: 14px;
 		line-height: 18px;
 	}
-	
+
 	.itemBlock4 .btn-box {
 		justify-content: center;
 		margin-top: 20px;
