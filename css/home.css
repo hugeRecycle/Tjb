@@ -516,10 +516,11 @@ main {
 		font-size: 24px;
 		margin-bottom: 10px;
 		margin-top: 0;
+		text-align: left;
 	}
 	
 	.itemBlock2 .nameBox {
-		justify-content: center;
+		justify-content: flex-start;
 		margin-bottom: 20px;
 	}
 	
@@ -532,6 +533,7 @@ main {
 	.itemBlock2 .nameBox span {
 		font-size: 18px;
 		line-height: 24px;
+		text-align: left;
 	}
 	
 	.itemBlock2 .nameBox .titleSpan {
