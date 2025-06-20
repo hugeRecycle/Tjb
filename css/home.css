@@ -10,6 +10,11 @@ main {
 	position: fixed;
 	top: 72px;
 	z-index: 1;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+	scroll-snap-stop: always;
+	-webkit-overflow-scrolling: touch;
+	overscroll-behavior: contain;
 }
 
 .banner-box {
@@ -96,6 +101,8 @@ main {
 	display: flex !important;
 	align-items: center;
 	justify-content: center;
+	scroll-snap-align: center;
+	height: 100%;
 }
 
 .itemBlock:nth-child(2n) {
@@ -480,6 +487,14 @@ main {
 	main {
 		height: calc(100% - 60px);
 		top: 60px;
+		scroll-snap-type: none;
+	}
+
+	.banner-box {
+		height: 220px !important;
+	}
+	.itemBlock {
+		height: auto;
 	}
 	
 	/* itemBlock2 适配 */
@@ -499,7 +514,8 @@ main {
 	
 	.itemBlock2 h5 {
 		font-size: 24px;
-		margin-bottom: 30px;
+		margin-bottom: 10px;
+		margin-top: 0;
 	}
 	
 	.itemBlock2 .nameBox {
@@ -580,7 +596,7 @@ main {
 	
 	.itemBlock3 .wordCloud-box {
 		width: 100%;
-		margin-top: 10px;
+		height: 288px;
 	}
 	
 	.itemBlock3 .wordCloudDetail-box p {
@@ -594,7 +610,11 @@ main {
 		font-size: 18px;
 		line-height: 26px;
 	}
-	
+
+	.itemBlock3 svg {
+		scale: 0.5;
+	}
+
 	/* itemBlock4 适配 */
 	.itemBlock4 .container-box {
 		width: 100%;
@@ -679,6 +699,6 @@ main {
 	}
 
 	.footer-box{
-		display: none;
+		/* display: none; */
 	}
 }

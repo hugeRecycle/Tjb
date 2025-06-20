@@ -214,7 +214,7 @@ display: none;
 }
 .footer-box .logo-box img {
 	/* width: 146px; */
-	height: 30px;
+	height: 40px;
 	display: block;
 }
 .footer-box .logo-box img:nth-child(2) {
@@ -232,9 +232,9 @@ display: none;
 	color: #FFFFFF;
 	margin-top: 4px;
 }
-.footer-box .labInfo-box p:nth-child(2) {
+/* .footer-box .labInfo-box p:nth-child(2) {
 	margin-top: 0;
-}
+} */
 .footer-box .labInfo-box p span {
 	font-family: Avenir-Medium;
 	font-weight: 500;
@@ -492,9 +492,22 @@ display: none;
 	.footer-box .logo-box {
 		margin-bottom: 15px;
 		justify-content: center;
+    	flex-direction: column;
+	}
+	.footer-box .logo-box img {
+		height: 36px;
+		object-fit: contain;
+	}
+
+	.footer-box .logo-box img:nth-child(2) {
+		margin-top: 15px;
+		margin-left: 0;
 	}
 	
-	
+	.footer-box .labInfo-box {
+		margin-left: 0;
+	}
+
 	.footer-box .labInfo-box a {
 		float: none;
 		margin: 10px auto 0;
